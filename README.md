@@ -2,43 +2,34 @@
 
 Подписка на матчи Сибири для **Apple Calendar** (Mac / iPhone) и **Google Calendar**.
 
-Файл обновляется автоматически из API КХЛ (примерно раз в 6 часов).
-
 ## Ссылка для подписки
 
 ```
 https://raw.githubusercontent.com/karpenko-chernikov/sibir-calendar/main/sibir.ics
 ```
 
-Или через jsDelivr (иногда надёжнее для Google):
+### iPhone / Mac
 
-```
-https://cdn.jsdelivr.net/gh/karpenko-chernikov/sibir-calendar@main/sibir.ics
-```
-
-### iPhone / Mac (Календарь)
-
-1. На Mac: **Файл → Новая подписка на календарь…**
-2. На iPhone: **Настройки → Календарь → Учётные записи → Добавить учётную запись → Другое → Добавить календарь с подпиской**
-3. Вставьте ссылку выше
-4. Имя: «ХК Сибирь», обновление — автоматически
-
-Или откройте на устройстве:
-
-```
-webcal://raw.githubusercontent.com/karpenko-chernikov/sibir-calendar/main/sibir.ics
-```
+- Mac: **Файл → Новая подписка на календарь…**
+- iPhone: **Настройки → Календарь → Учётные записи → Другое → Добавить календарь с подпиской**
+- Или: `webcal://raw.githubusercontent.com/karpenko-chernikov/sibir-calendar/main/sibir.ics`
 
 ### Google Calendar
 
-1. [calendar.google.com](https://calendar.google.com) → слева **Другие календари** → **+** → **По URL**
-2. Вставьте ссылку на `.ics`
-3. Добавить календарь
+**Другие календари → + → По URL** → вставить ссылку выше.
 
-События появятся с названием вида `Сибирь — Амур` / `Ак Барс — Сибирь`, местом проведения и пометкой дома/в гостях. Пока КХЛ не опубликовал точное время — матч на весь день («время ещё не объявлено»).
+## Автообновление
 
-## Обновить вручную
+На этом Mac стоит LaunchAgent `com.nikita.sibir-calendar-sync`: каждые **6 часов** тянет расписание из API КХЛ и обновляет `sibir.ics` на GitHub.
+
+Когда КХЛ опубликует точное время матча, оно попадёт в файл при следующей синхронизации. Apple / Google подтянут изменения сами (обычно в течение нескольких часов).
+
+Лог: `~/Library/Logs/sibir-calendar-sync.log`
+
+Вручную:
 
 ```bash
-node scripts/sync-ics.mjs
+./scripts/auto-sync.sh
 ```
+
+Пока время не объявлено — матч на весь день. После появления времени событие станет с конкретным часом (часовой пояс `Asia/Novosibirsk`).
