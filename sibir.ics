@@ -1,0 +1,698 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//HC Sibir Calendar//RU
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:ХК Сибирь
+X-WR-TIMEZONE:Asia/Novosibirsk
+BEGIN:VTIMEZONE
+TZID:Asia/Novosibirsk
+X-LIC-LOCATION:Asia/Novosibirsk
+BEGIN:STANDARD
+TZOFFSETFROM:+0700
+TZOFFSETTO:+0700
+TZNAME:+07
+DTSTART:19700101T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:sibir-3000067@hcsibir-calendar
+DTSTAMP:20260806T115341Z
+DTSTART;VALUE=DATE:20260905
+DTEND;VALUE=DATE:20260906
+SUMMARY:Ак Барс — Сибирь
+DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · В гостях · Казань · Врем
+ я начала ещё не объявлено
+LOCATION:Казань
+END:VEVENT
+BEGIN:VEVENT
+UID:sibir-3000091@hcsibir-calendar
+DTSTAMP:20260806T115341Z
+DTSTART;VALUE=DATE:20260907
+DTEND;VALUE=DATE:20260908
+SUMMARY:Барыс — Сибирь
+DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · В гостях · Астана · Врем
+ я начала ещё не объявлено
+LOCATION:Астана
+END:VEVENT
+BEGIN:VEVENT
+UID:sibir-3000151@hcsibir-calendar
+DTSTAMP:20260806T115341Z
+DTSTART;VALUE=DATE:20260910
+DTEND;VALUE=DATE:20260911
+SUMMARY:Сибирь — Амур
+DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · Дома · Новосибирск · Вре
+ мя начала ещё не объявлено
+LOCATION:Новосибирск
+END:VEVENT
+BEGIN:VEVENT
+UID:sibir-3000195@hcsibir-calendar
+DTSTAMP:20260806T115341Z
+DTSTART;VALUE=DATE:20260913
+DTEND;VALUE=DATE:20260914
+SUMMARY:Сибирь — Автомобилист
+DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · Дома · Новосибирск · Вре
+ мя начала ещё не объявлено
+LOCATION:Новосибирск
+END:VEVENT
+BEGIN:VEVENT
+UID:sibir-3000231@hcsibir-calendar
+DTSTAMP:20260806T115341Z
+DTSTART;VALUE=DATE:20260916
+DTEND;VALUE=DATE:20260917
+SUMMARY:Сибирь — Нефтехимик
+DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · Дома · Новосибирск · Вре
+ мя начала ещё не объявлено
+LOCATION:Новосибирск
+END:VEVENT
+BEGIN:VEVENT
+UID:sibir-3000267@hcsibir-calendar
+DTSTAMP:20260806T115341Z
+DTSTART;VALUE=DATE:20260918
+DTEND;VALUE=DATE:20260919
+SUMMARY:Динамо Мн — Сибирь
+DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · В гостях · Минск · Время
+  начала ещё не объявлено
+LOCATION:Минск
+END:VEVENT
+BEGIN:VEVENT
+UID:sibir-3000307@hcsibir-calendar
+DTSTAMP:20260806T115341Z
+DTSTART;VALUE=DATE:20260920
+DTEND;VALUE=DATE:20260921
+SUMMARY:ХК Сочи — Сибирь
+DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · В гостях · ФТ Сириус · В
+ ремя начала ещё не объявлено
+LOCATION:ФТ Сириус
+END:VEVENT
+BEGIN:VEVENT
+UID:sibir-3000371@hcsibir-calendar
+DTSTAMP:20260806T115341Z
+DTSTART;VALUE=DATE:20260924
+DTEND;VALUE=DATE:20260925
+SUMMARY:Сибирь — Ак Барс
+DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · Дома · Новосибирск · Вре
+ мя начала ещё не объявлено
+LOCATION:Новосибирск
+END:VEVENT
+BEGIN:VEVENT
+UID:sibir-3000423@hcsibir-calendar
+DTSTAMP:20260806T115341Z
+DTSTART;VALUE=DATE:20260927
+DTEND;VALUE=DATE:20260928
+SUMMARY:Сибирь — Локомотив
+DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · Дома · Новосибирск · Вре
+ мя начала ещё не объявлено
+LOCATION:Новосибирск
+END:VEVENT
+BEGIN:VEVENT
+UID:sibir-3000475@hcsibir-calendar
+DTSTAMP:20260806T115341Z
+DTSTART;VALUE=DATE:20260930
+DTEND;VALUE=DATE:20261001
+SUMMARY:Локомотив — Сибирь
+DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · В гостях · Ярославль · В
+ ремя начала ещё не объявлено
+LOCATION:Ярославль
+END:VEVENT
+BEGIN:VEVENT
+UID:sibir-3000507@hcsibir-calendar
+DTSTAMP:20260806T115341Z
+DTSTART;VALUE=DATE:20261002
+DTEND;VALUE=DATE:20261003
+SUMMARY:Салават Юлаев — Сибирь
+DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · В гостях · Уфа · Время н
+ ачала ещё не объявлено
+LOCATION:Уфа
+END:VEVENT
+BEGIN:VEVENT
+UID:sibir-3000543@hcsibir-calendar
+DTSTAMP:20260806T115341Z
+DTSTART;VALUE=DATE:20261004
+DTEND;VALUE=DATE:20261005
+SUMMARY:Нефтехимик — Сибирь
+DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · В гостях · Нижнекамск · 
+ Время начала ещё не объявлено
+LOCATION:Нижнекамск
+END:VEVENT
+BEGIN:VEVENT
+UID:sibir-3000587@hcsibir-calendar
+DTSTAMP:20260806T115341Z
+DTSTART;VALUE=DATE:20261007
+DTEND;VALUE=DATE:20261008
+SUMMARY:Сибирь — Салават Юлаев
+DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · Дома · Новосибирск · Вре
+ мя начала ещё не объявлено
+LOCATION:Новосибирск
+END:VEVENT
+BEGIN:VEVENT
+UID:sibir-3000635@hcsibir-calendar
+DTSTAMP:20260806T115341Z
+DTSTART;VALUE=DATE:20261010
+DTEND;VALUE=DATE:20261011
+SUMMARY:Трактор — Сибирь
+DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · В гостях · Челябинск · В
+ ремя начала ещё не объявлено
+LOCATION:Челябинск
+END:VEVENT
+BEGIN:VEVENT
+UID:sibir-3000663@hcsibir-calendar
+DTSTAMP:20260806T115341Z
+DTSTART;VALUE=DATE:20261012
+DTEND;VALUE=DATE:20261013
+SUMMARY:Барыс — Сибирь
+DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · В гостях · Астана · Врем
+ я начала ещё не объявлено
+LOCATION:Астана
+END:VEVENT
+BEGIN:VEVENT
+UID:sibir-3000691@hcsibir-calendar
+DTSTAMP:20260806T115341Z
+DTSTART;VALUE=DATE:20261014
+DTEND;VALUE=DATE:20261015
+SUMMARY:Салават Юлаев — Сибирь
+DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · В гостях · Уфа · Время н
+ ачала ещё не объявлено
+LOCATION:Уфа
+END:VEVENT
+BEGIN:VEVENT
+UID:sibir-3000747@hcsibir-calendar
+DTSTAMP:20260806T115341Z
+DTSTART;VALUE=DATE:20261017
+DTEND;VALUE=DATE:20261018
+SUMMARY:Сибирь — Барыс
+DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · Дома · Новосибирск · Вре
+ мя начала ещё не объявлено
+LOCATION:Новосибирск
+END:VEVENT
+BEGIN:VEVENT
+UID:sibir-3000795@hcsibir-calendar
+DTSTAMP:20260806T115341Z
+DTSTART;VALUE=DATE:20261020
+DTEND;VALUE=DATE:20261021
+SUMMARY:Динамо М — Сибирь
+DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · В гостях · Москва · Врем
+ я начала ещё не объявлено
+LOCATION:Москва
+END:VEVENT
+BEGIN:VEVENT
+UID:sibir-3000823@hcsibir-calendar
+DTSTAMP:20260806T115341Z
+DTSTART;VALUE=DATE:20261022
+DTEND;VALUE=DATE:20261023
+SUMMARY:СКА — Сибирь
+DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · В гостях · Санкт-Петербу
+ рг · Время начала ещё не объявлено
+LOCATION:Санкт-Петербург
+END:VEVENT
+BEGIN:VEVENT
+UID:sibir-3000859@hcsibir-calendar
+DTSTAMP:20260806T115341Z
+DTSTART;VALUE=DATE:20261024
+DTEND;VALUE=DATE:20261025
+SUMMARY:Металлург Мг — Сибирь
+DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · В гостях · Магнитогорск 
+ · Время начала ещё не объявлено
+LOCATION:Магнитогорск
+END:VEVENT
+BEGIN:VEVENT
+UID:sibir-3000895@hcsibir-calendar
+DTSTAMP:20260806T115341Z
+DTSTART;VALUE=DATE:20261026
+DTEND;VALUE=DATE:20261027
+SUMMARY:Трактор — Сибирь
+DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · В гостях · Челябинск · В
+ ремя начала ещё не объявлено
+LOCATION:Челябинск
+END:VEVENT
+BEGIN:VEVENT
+UID:sibir-3000935@hcsibir-calendar
+DTSTAMP:20260806T115341Z
+DTSTART;VALUE=DATE:20261029
+DTEND;VALUE=DATE:20261030
+SUMMARY:Сибирь — Металлург Мг
+DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · Дома · Новосибирск · Вре
+ мя начала ещё не объявлено
+LOCATION:Новосибирск
+END:VEVENT
+BEGIN:VEVENT
+UID:sibir-3000975@hcsibir-calendar
+DTSTAMP:20260806T115341Z
+DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20261102
+SUMMARY:Сибирь — Нефтехимик
+DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · Дома · Новосибирск · Вре
+ мя начала ещё не объявлено
+LOCATION:Новосибирск
+END:VEVENT
+BEGIN:VEVENT
+UID:sibir-3001031@hcsibir-calendar
+DTSTAMP:20260806T115341Z
+DTSTART;VALUE=DATE:20261104
+DTEND;VALUE=DATE:20261105
+SUMMARY:Сибирь — Ак Барс
+DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · Дома · Новосибирск · Вре
+ мя начала ещё не объявлено
+LOCATION:Новосибирск
+END:VEVENT
+BEGIN:VEVENT
+UID:sibir-3001087@hcsibir-calendar
+DTSTAMP:20260806T115341Z
+DTSTART;VALUE=DATE:20261107
+DTEND;VALUE=DATE:20261108
+SUMMARY:Авангард — Сибирь
+DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · В гостях · Омск · Время 
+ начала ещё не объявлено
+LOCATION:Омск
+END:VEVENT
+BEGIN:VEVENT
+UID:sibir-3001111@hcsibir-calendar
+DTSTAMP:20260806T115341Z
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261110
+SUMMARY:ЦСКА — Сибирь
+DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · В гостях · Москва · Врем
+ я начала ещё не объявлено
+LOCATION:Москва
+END:VEVENT
+BEGIN:VEVENT
+UID:sibir-3001211@hcsibir-calendar
+DTSTAMP:20260806T115341Z
+DTSTART;VALUE=DATE:20261115
+DTEND;VALUE=DATE:20261116
+SUMMARY:Сибирь — Динамо М
+DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · Дома · Новосибирск · Вре
+ мя начала ещё не объявлено
+LOCATION:Новосибирск
+END:VEVENT
+BEGIN:VEVENT
+UID:sibir-3001231@hcsibir-calendar
+DTSTAMP:20260806T115341Z
+DTSTART;VALUE=DATE:20261117
+DTEND;VALUE=DATE:20261118
+SUMMARY:Сибирь — Трактор
+DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · Дома · Новосибирск · Вре
+ мя начала ещё не объявлено
+LOCATION:Новосибирск
+END:VEVENT
+BEGIN:VEVENT
+UID:sibir-3001287@hcsibir-calendar
+DTSTAMP:20260806T115341Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:Сибирь — Автомобилист
+DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · Дома · Новосибирск · Вре
+ мя начала ещё не объявлено
+LOCATION:Новосибирск
+END:VEVENT
+BEGIN:VEVENT
+UID:sibir-3001335@hcsibir-calendar
+DTSTAMP:20260806T115341Z
+DTSTART;VALUE=DATE:20261123
+DTEND;VALUE=DATE:20261124
+SUMMARY:Сибирь — Северсталь
+DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · Дома · Новосибирск · Вре
+ мя начала ещё не объявлено
+LOCATION:Новосибирск
+END:VEVENT
+BEGIN:VEVENT
+UID:sibir-3001363@hcsibir-calendar
+DTSTAMP:20260806T115341Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261126
+SUMMARY:Торпедо — Сибирь
+DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · В гостях · Нижний Новгор
+ од · Время начала ещё не объявлено
+LOCATION:Нижний Новгород
+END:VEVENT
+BEGIN:VEVENT
+UID:sibir-3001403@hcsibir-calendar
+DTSTAMP:20260806T115341Z
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261128
+SUMMARY:Северсталь — Сибирь
+DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · В гостях · Череповец · В
+ ремя начала ещё не объявлено
+LOCATION:Череповец
+END:VEVENT
+BEGIN:VEVENT
+UID:sibir-3001443@hcsibir-calendar
+DTSTAMP:20260806T115341Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261201
+SUMMARY:Сибирь — Металлург Мг
+DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · Дома · Новосибирск · Вре
+ мя начала ещё не объявлено
+LOCATION:Новосибирск
+END:VEVENT
+BEGIN:VEVENT
+UID:sibir-3001495@hcsibir-calendar
+DTSTAMP:20260806T115341Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261205
+SUMMARY:Сибирь — Спартак
+DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · Дома · Новосибирск · Вре
+ мя начала ещё не объявлено
+LOCATION:Новосибирск
+END:VEVENT
+BEGIN:VEVENT
+UID:sibir-3001563@hcsibir-calendar
+DTSTAMP:20260806T115341Z
+DTSTART;VALUE=DATE:20261215
+DTEND;VALUE=DATE:20261216
+SUMMARY:Сибирь — СКА
+DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · Дома · Новосибирск · Вре
+ мя начала ещё не объявлено
+LOCATION:Новосибирск
+END:VEVENT
+BEGIN:VEVENT
+UID:sibir-3001599@hcsibir-calendar
+DTSTAMP:20260806T115341Z
+DTSTART;VALUE=DATE:20261217
+DTEND;VALUE=DATE:20261218
+SUMMARY:Сибирь — Амур
+DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · Дома · Новосибирск · Вре
+ мя начала ещё не объявлено
+LOCATION:Новосибирск
+END:VEVENT
+BEGIN:VEVENT
+UID:sibir-3001671@hcsibir-calendar
+DTSTAMP:20260806T115341Z
+DTSTART;VALUE=DATE:20261221
+DTEND;VALUE=DATE:20261222
+SUMMARY:Сибирь — Адмирал
+DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · Дома · Новосибирск · Вре
+ мя начала ещё не объявлено
+LOCATION:Новосибирск
+END:VEVENT
+BEGIN:VEVENT
+UID:sibir-3001691@hcsibir-calendar
+DTSTAMP:20260806T115341Z
+DTSTART;VALUE=DATE:20261223
+DTEND;VALUE=DATE:20261224
+SUMMARY:Сибирь — Адмирал
+DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · Дома · Новосибирск · Вре
+ мя начала ещё не объявлено
+LOCATION:Новосибирск
+END:VEVENT
+BEGIN:VEVENT
+UID:sibir-3001787@hcsibir-calendar
+DTSTAMP:20260806T115341Z
+DTSTART;VALUE=DATE:20261228
+DTEND;VALUE=DATE:20261229
+SUMMARY:Амур — Сибирь
+DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · В гостях · Хабаровск · В
+ ремя начала ещё не объявлено
+LOCATION:Хабаровск
+END:VEVENT
+BEGIN:VEVENT
+UID:sibir-3001823@hcsibir-calendar
+DTSTAMP:20260806T115341Z
+DTSTART;VALUE=DATE:20261230
+DTEND;VALUE=DATE:20261231
+SUMMARY:Адмирал — Сибирь
+DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · В гостях · Владивосток ·
+  Время начала ещё не объявлено
+LOCATION:Владивосток
+END:VEVENT
+BEGIN:VEVENT
+UID:sibir-3001851@hcsibir-calendar
+DTSTAMP:20260806T115341Z
+DTSTART;VALUE=DATE:20270103
+DTEND;VALUE=DATE:20270104
+SUMMARY:Сибирь — Амур
+DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · Дома · Новосибирск · Вре
+ мя начала ещё не объявлено
+LOCATION:Новосибирск
+END:VEVENT
+BEGIN:VEVENT
+UID:sibir-3001887@hcsibir-calendar
+DTSTAMP:20260806T115341Z
+DTSTART;VALUE=DATE:20270105
+DTEND;VALUE=DATE:20270106
+SUMMARY:Сибирь — Торпедо
+DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · Дома · Новосибирск · Вре
+ мя начала ещё не объявлено
+LOCATION:Новосибирск
+END:VEVENT
+BEGIN:VEVENT
+UID:sibir-3001919@hcsibir-calendar
+DTSTAMP:20260806T115341Z
+DTSTART;VALUE=DATE:20270107
+DTEND;VALUE=DATE:20270108
+SUMMARY:Сибирь — Драконы
+DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · Дома · Новосибирск · Вре
+ мя начала ещё не объявлено
+LOCATION:Новосибирск
+END:VEVENT
+BEGIN:VEVENT
+UID:sibir-3001955@hcsibir-calendar
+DTSTAMP:20260806T115341Z
+DTSTART;VALUE=DATE:20270110
+DTEND;VALUE=DATE:20270111
+SUMMARY:Ак Барс — Сибирь
+DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · В гостях · Казань · Врем
+ я начала ещё не объявлено
+LOCATION:Казань
+END:VEVENT
+BEGIN:VEVENT
+UID:sibir-3001999@hcsibir-calendar
+DTSTAMP:20260806T115341Z
+DTSTART;VALUE=DATE:20270112
+DTEND;VALUE=DATE:20270113
+SUMMARY:Барыс — Сибирь
+DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · В гостях · Астана · Врем
+ я начала ещё не объявлено
+LOCATION:Астана
+END:VEVENT
+BEGIN:VEVENT
+UID:sibir-3002039@hcsibir-calendar
+DTSTAMP:20260806T115341Z
+DTSTART;VALUE=DATE:20270115
+DTEND;VALUE=DATE:20270116
+SUMMARY:Сибирь — ХК Сочи
+DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · Дома · Новосибирск · Вре
+ мя начала ещё не объявлено
+LOCATION:Новосибирск
+END:VEVENT
+BEGIN:VEVENT
+UID:sibir-3002083@hcsibir-calendar
+DTSTAMP:20260806T115341Z
+DTSTART;VALUE=DATE:20270117
+DTEND;VALUE=DATE:20270118
+SUMMARY:Сибирь — Трактор
+DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · Дома · Новосибирск · Вре
+ мя начала ещё не объявлено
+LOCATION:Новосибирск
+END:VEVENT
+BEGIN:VEVENT
+UID:sibir-3002143@hcsibir-calendar
+DTSTAMP:20260806T115341Z
+DTSTART;VALUE=DATE:20270121
+DTEND;VALUE=DATE:20270122
+SUMMARY:Авангард — Сибирь
+DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · В гостях · Омск · Время 
+ начала ещё не объявлено
+LOCATION:Омск
+END:VEVENT
+BEGIN:VEVENT
+UID:sibir-3002191@hcsibir-calendar
+DTSTAMP:20260806T115341Z
+DTSTART;VALUE=DATE:20270124
+DTEND;VALUE=DATE:20270125
+SUMMARY:Сибирь — ЦСКА
+DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · Дома · Новосибирск · Вре
+ мя начала ещё не объявлено
+LOCATION:Новосибирск
+END:VEVENT
+BEGIN:VEVENT
+UID:sibir-3002223@hcsibir-calendar
+DTSTAMP:20260806T115341Z
+DTSTART;VALUE=DATE:20270126
+DTEND;VALUE=DATE:20270127
+SUMMARY:Сибирь — Барыс
+DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · Дома · Новосибирск · Вре
+ мя начала ещё не объявлено
+LOCATION:Новосибирск
+END:VEVENT
+BEGIN:VEVENT
+UID:sibir-3002243@hcsibir-calendar
+DTSTAMP:20260806T115341Z
+DTSTART;VALUE=DATE:20270128
+DTEND;VALUE=DATE:20270129
+SUMMARY:Автомобилист — Сибирь
+DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · В гостях · Екатеринбург 
+ · Время начала ещё не объявлено
+LOCATION:Екатеринбург
+END:VEVENT
+BEGIN:VEVENT
+UID:sibir-3002287@hcsibir-calendar
+DTSTAMP:20260806T115341Z
+DTSTART;VALUE=DATE:20270130
+DTEND;VALUE=DATE:20270131
+SUMMARY:Нефтехимик — Сибирь
+DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · В гостях · Нижнекамск · 
+ Время начала ещё не объявлено
+LOCATION:Нижнекамск
+END:VEVENT
+BEGIN:VEVENT
+UID:sibir-3002339@hcsibir-calendar
+DTSTAMP:20260806T115341Z
+DTSTART;VALUE=DATE:20270202
+DTEND;VALUE=DATE:20270203
+SUMMARY:Сибирь — Авангард
+DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · Дома · Новосибирск · Вре
+ мя начала ещё не объявлено
+LOCATION:Новосибирск
+END:VEVENT
+BEGIN:VEVENT
+UID:sibir-3002407@hcsibir-calendar
+DTSTAMP:20260806T115341Z
+DTSTART;VALUE=DATE:20270209
+DTEND;VALUE=DATE:20270210
+SUMMARY:Сибирь — Авангард
+DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · Дома · Новосибирск · Вре
+ мя начала ещё не объявлено
+LOCATION:Новосибирск
+END:VEVENT
+BEGIN:VEVENT
+UID:sibir-3002479@hcsibir-calendar
+DTSTAMP:20260806T115341Z
+DTSTART;VALUE=DATE:20270213
+DTEND;VALUE=DATE:20270214
+SUMMARY:Сибирь — Барыс
+DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · Дома · Новосибирск · Вре
+ мя начала ещё не объявлено
+LOCATION:Новосибирск
+END:VEVENT
+BEGIN:VEVENT
+UID:sibir-3002539@hcsibir-calendar
+DTSTAMP:20260806T115341Z
+DTSTART;VALUE=DATE:20270218
+DTEND;VALUE=DATE:20270219
+SUMMARY:Лада — Сибирь
+DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · В гостях · Тольятти · Вр
+ емя начала ещё не объявлено
+LOCATION:Тольятти
+END:VEVENT
+BEGIN:VEVENT
+UID:sibir-3002587@hcsibir-calendar
+DTSTAMP:20260806T115341Z
+DTSTART;VALUE=DATE:20270220
+DTEND;VALUE=DATE:20270221
+SUMMARY:Металлург Мг — Сибирь
+DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · В гостях · Магнитогорск 
+ · Время начала ещё не объявлено
+LOCATION:Магнитогорск
+END:VEVENT
+BEGIN:VEVENT
+UID:sibir-3002623@hcsibir-calendar
+DTSTAMP:20260806T115341Z
+DTSTART;VALUE=DATE:20270222
+DTEND;VALUE=DATE:20270223
+SUMMARY:Драконы — Сибирь
+DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · В гостях · Санкт-Петербу
+ рг · Время начала ещё не объявлено
+LOCATION:Санкт-Петербург
+END:VEVENT
+BEGIN:VEVENT
+UID:sibir-3002671@hcsibir-calendar
+DTSTAMP:20260806T115341Z
+DTSTART;VALUE=DATE:20270225
+DTEND;VALUE=DATE:20270226
+SUMMARY:Сибирь — Лада
+DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · Дома · Новосибирск · Вре
+ мя начала ещё не объявлено
+LOCATION:Новосибирск
+END:VEVENT
+BEGIN:VEVENT
+UID:sibir-3002719@hcsibir-calendar
+DTSTAMP:20260806T115341Z
+DTSTART;VALUE=DATE:20270228
+DTEND;VALUE=DATE:20270301
+SUMMARY:Адмирал — Сибирь
+DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · В гостях · Владивосток ·
+  Время начала ещё не объявлено
+LOCATION:Владивосток
+END:VEVENT
+BEGIN:VEVENT
+UID:sibir-3002755@hcsibir-calendar
+DTSTAMP:20260806T115341Z
+DTSTART;VALUE=DATE:20270302
+DTEND;VALUE=DATE:20270303
+SUMMARY:Адмирал — Сибирь
+DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · В гостях · Владивосток ·
+  Время начала ещё не объявлено
+LOCATION:Владивосток
+END:VEVENT
+BEGIN:VEVENT
+UID:sibir-3002783@hcsibir-calendar
+DTSTAMP:20260806T115341Z
+DTSTART;VALUE=DATE:20270304
+DTEND;VALUE=DATE:20270305
+SUMMARY:Амур — Сибирь
+DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · В гостях · Хабаровск · В
+ ремя начала ещё не объявлено
+LOCATION:Хабаровск
+END:VEVENT
+BEGIN:VEVENT
+UID:sibir-3002815@hcsibir-calendar
+DTSTAMP:20260806T115341Z
+DTSTART;VALUE=DATE:20270306
+DTEND;VALUE=DATE:20270307
+SUMMARY:Амур — Сибирь
+DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · В гостях · Хабаровск · В
+ ремя начала ещё не объявлено
+LOCATION:Хабаровск
+END:VEVENT
+BEGIN:VEVENT
+UID:sibir-3002879@hcsibir-calendar
+DTSTAMP:20260806T115341Z
+DTSTART;VALUE=DATE:20270310
+DTEND;VALUE=DATE:20270311
+SUMMARY:Сибирь — Салават Юлаев
+DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · Дома · Новосибирск · Вре
+ мя начала ещё не объявлено
+LOCATION:Новосибирск
+END:VEVENT
+BEGIN:VEVENT
+UID:sibir-3002939@hcsibir-calendar
+DTSTAMP:20260806T115341Z
+DTSTART;VALUE=DATE:20270313
+DTEND;VALUE=DATE:20270314
+SUMMARY:Сибирь — Динамо Мн
+DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · Дома · Новосибирск · Вре
+ мя начала ещё не объявлено
+LOCATION:Новосибирск
+END:VEVENT
+BEGIN:VEVENT
+UID:sibir-3002963@hcsibir-calendar
+DTSTAMP:20260806T115341Z
+DTSTART;VALUE=DATE:20270315
+DTEND;VALUE=DATE:20270316
+SUMMARY:Сибирь — Адмирал
+DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · Дома · Новосибирск · Вре
+ мя начала ещё не объявлено
+LOCATION:Новосибирск
+END:VEVENT
+BEGIN:VEVENT
+UID:sibir-3003023@hcsibir-calendar
+DTSTAMP:20260806T115341Z
+DTSTART;VALUE=DATE:20270318
+DTEND;VALUE=DATE:20270319
+SUMMARY:Автомобилист — Сибирь
+DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · В гостях · Екатеринбург 
+ · Время начала ещё не объявлено
+LOCATION:Екатеринбург
+END:VEVENT
+BEGIN:VEVENT
+UID:sibir-3003055@hcsibir-calendar
+DTSTAMP:20260806T115341Z
+DTSTART;VALUE=DATE:20270320
+DTEND;VALUE=DATE:20270321
+SUMMARY:Спартак — Сибирь
+DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · В гостях · Москва · Врем
+ я начала ещё не объявлено
+LOCATION:Москва
+END:VEVENT
+END:VCALENDAR
