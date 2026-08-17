@@ -276,26 +276,28 @@ function formBlock(title, entries) {
   return lines
 }
 
-function headToHeadPlayed(seasonEvents, oppId) {
+function headToHeadSeason(seasonEvents, oppId) {
   return seasonEvents
     .filter((e) => {
       const ids = new Set([e.team_a.id, e.team_b.id])
-      return ids.has(SIBIR_ID) && ids.has(oppId) && isFinished(e)
+      return ids.has(SIBIR_ID) && ids.has(oppId)
     })
     .sort((a, b) => eventStartMs(a) - eventStartMs(b))
 }
 
 function h2hLines(games, season) {
-  const lines = [`Личные встречи ${season}:`]
+  const lines = [`Все матчи ${season}:`]
   if (!games.length) {
-    lines.push('пока нет сыгранных матчей')
+    lines.push('в этом сезоне не играют')
     return lines
   }
   for (const g of games) {
     const home = g.team_a.id === SIBIR_ID
     const opp = opponentOf(g, SIBIR_ID)
     const matchup = home ? `Сибирь — ${opp.name}` : `${opp.name} — Сибирь`
-    lines.push(`${formatRuDate(eventStartMs(g))}  ${matchup}  ${scoreLabel(g)}`)
+    const mark = resultMark(g, SIBIR_ID)
+    const prefix = mark ? `${mark} ` : ''
+    lines.push(`${prefix}${formatRuDate(eventStartMs(g))}  ${matchup}  ${scoreLabel(g)}`)
   }
   return lines
 }
@@ -319,7 +321,7 @@ function buildDescription(event, seasonEvents, oppPool, season) {
   const tbd = isTimeTbd(event) && !isFinished(event)
   const sibirForm = lastFormEntries(seasonEvents, SIBIR_ID)
   const oppForm = lastFormEntries(oppPool, opp.id)
-  const h2h = headToHeadPlayed(seasonEvents, opp.id)
+  const h2h = headToHeadSeason(seasonEvents, opp.id)
 
   const header = [
     'КХЛ',
