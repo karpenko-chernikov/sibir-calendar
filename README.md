@@ -20,9 +20,9 @@ https://raw.githubusercontent.com/karpenko-chernikov/sibir-calendar/main/sibir.i
 
 ## Автообновление
 
-На этом Mac стоит LaunchAgent `com.nikita.sibir-calendar-sync`: каждые **6 часов** тянет расписание из API КХЛ и обновляет `sibir.ics` на GitHub.
+На этом Mac стоит LaunchAgent `com.nikita.sibir-calendar-sync`: каждые **6 часов** берёт расписание с khl.ru (точное время МСК) и API КХЛ (счета, форма) и обновляет `sibir.ics` на GitHub.
 
-Когда КХЛ опубликует точное время матча, оно попадёт в файл при следующей синхронизации. Apple / Google подтянут изменения сами (обычно в течение нескольких часов).
+Apple / Google подтягивают изменения сами (обычно в течение нескольких часов). В карточке матча: форма текущего сезона (🟢 победа, 🔴 поражение, ⚪ ещё не сыграно) с соперником и счётом, плюс личные встречи сезона.
 
 Лог: `~/Library/Logs/sibir-calendar-sync.log`
 

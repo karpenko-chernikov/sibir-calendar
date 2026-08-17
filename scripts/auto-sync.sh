@@ -21,7 +21,19 @@ if ! mkdir "$LOCK_DIR" 2>/dev/null; then
 fi
 trap 'rmdir "$LOCK_DIR" 2>/dev/null || true' EXIT
 
-node scripts/sync-ics.mjs
+ok=0
+for attempt in 1 2 3; do
+  if node scripts/sync-ics.mjs; then
+    ok=1
+    break
+  fi
+  echo "sync-ics failed (attempt ${attempt}), retrying in 30s"
+  sleep 30
+done
+if [[ "$ok" != 1 ]]; then
+  echo "sync-ics failed after 3 attempts"
+  exit 1
+fi
 
 REPO="karpenko-chernikov/sibir-calendar"
 PATH_IN_REPO="sibir.ics"
