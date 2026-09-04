@@ -1,8 +1,9 @@
 /**
  * Sync HC Sibir KHL schedule → sibir.ics (Apple / Google Calendar).
- * Times come from khl.ru (MSK); form + H2H from the KHL mobile API.
+ * Times from khl.ru (MSK); form/H2H/player&special-teams stats from KHL API.
+ * Stats are for the current stage only (regular season or playoffs).
  */
-import { writeFileSync } from 'node:fs'
+import { mkdirSync, readFileSync, writeFileSync, existsSync } from 'node:fs'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
@@ -11,8 +12,13 @@ const KHL_CALENDAR_URL = 'https://www.khl.ru/calendar/?club=29'
 const SIBIR_ID = 24
 const TZ = 'Asia/Novosibirsk'
 const FORM_N = 5
+const DETAIL_CONCURRENCY = 10
 const UA =
   'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36'
+
+const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..')
+const CACHE_DIR = join(ROOT, '.cache')
+const DETAIL_CACHE_PATH = join(CACHE_DIR, 'event-details.json')
 
 const MONTHS = {
   января: 1,
@@ -51,6 +57,11 @@ async function fetchTeamEvents(teamId, stageId) {
     if (batch.length < 16) break
   }
   return all
+}
+
+async function fetchTeam(teamId, stageId) {
+  const data = await getJson(`/team_v2.json?id=${teamId}&stage_id=${stageId}`)
+  return data.team
 }
 
 function cookieName(nv) {
@@ -105,7 +116,6 @@ function parseKhlWebsiteGames(html) {
   return games
 }
 
-/** KHL website times are Moscow (UTC+3, no DST). */
 function mskWallToUtcMs(y, m, d, hh, mm) {
   return Date.UTC(y, m - 1, d, hh - 3, mm, 0)
 }
@@ -315,13 +325,272 @@ function applyWebsiteTimes(events, websiteGames) {
   return applied
 }
 
-function buildDescription(event, seasonEvents, oppPool, season) {
+function normName(name) {
+  return String(name || '')
+    .toLowerCase()
+    .replace(/\./g, '')
+    .replace(/\s+/g, ' ')
+    .trim()
+}
+
+function shortName(name) {
+  const parts = String(name || '').trim().split(/\s+/)
+  if (parts.length >= 2) return `${parts[0]} ${parts[1][0]}.`
+  return name
+}
+
+function isForward(roleKey) {
+  return roleKey === 'forward'
+}
+
+function isDefense(roleKey) {
+  return roleKey === 'defensemen' || roleKey === 'defender' || roleKey === 'defence'
+}
+
+function emptyTeamBag() {
+  return {
+    players: new Map(),
+    ppGoals: 0,
+    ppOpps: 0,
+    pkGoalsAgainst: 0,
+    pkOpps: 0,
+  }
+}
+
+function cloneTeamBag(bag) {
+  const players = new Map()
+  for (const [k, v] of bag.players) players.set(k, { ...v })
+  return {
+    players,
+    ppGoals: bag.ppGoals,
+    ppOpps: bag.ppOpps,
+    pkGoalsAgainst: bag.pkGoalsAgainst,
+    pkOpps: bag.pkOpps,
+  }
+}
+
+function ensurePlayer(bag, key, name, roleKey) {
+  if (!bag.players.has(key)) {
+    bag.players.set(key, { name, roleKey: roleKey || 'forward', g: 0, a: 0 })
+  } else if (roleKey && bag.players.get(key).roleKey !== roleKey) {
+    bag.players.get(key).roleKey = roleKey
+  }
+  return bag.players.get(key)
+}
+
+function loadDetailCache() {
+  try {
+    if (!existsSync(DETAIL_CACHE_PATH)) return {}
+    return JSON.parse(readFileSync(DETAIL_CACHE_PATH, 'utf8'))
+  } catch {
+    return {}
+  }
+}
+
+function saveDetailCache(cache) {
+  mkdirSync(CACHE_DIR, { recursive: true })
+  writeFileSync(DETAIL_CACHE_PATH, JSON.stringify(cache), 'utf8')
+}
+
+async function mapPool(items, limit, fn) {
+  const out = new Array(items.length)
+  let i = 0
+  async function worker() {
+    while (i < items.length) {
+      const idx = i++
+      out[idx] = await fn(items[idx], idx)
+    }
+  }
+  await Promise.all(Array.from({ length: Math.min(limit, items.length) }, () => worker()))
+  return out
+}
+
+async function fetchEventDetails(eventIds, cache) {
+  const missing = eventIds.filter((id) => !cache[id])
+  if (missing.length) {
+    await mapPool(missing, DETAIL_CONCURRENCY, async (id) => {
+      try {
+        const data = await getJson(`/event_v2.json?id=${id}`)
+        const ev = data.event || data
+        cache[id] = {
+          id,
+          goals: (ev.goals || []).map((g) => ({
+            status: g.status || '',
+            status_abbr: g.status_abbr || '',
+            author: g.author
+              ? { name: g.author.name, team_id: g.author.team_id, shirt_number: g.author.shirt_number }
+              : null,
+            assistants: (g.assistants || []).map((a) => ({
+              name: a.name,
+              team_id: a.team_id,
+              shirt_number: a.shirt_number,
+            })),
+          })),
+          violations: (ev.violations || []).map((v) => ({
+            time: v.time,
+            penalty_time: v.penalty_time,
+            penalty_reason: v.penalty_reason,
+            violator: v.violator
+              ? { name: v.violator.name, team_id: v.violator.team_id || v.violator.team?.id }
+              : null,
+            description: v.quote?.description || '',
+          })),
+          team_a_id: ev.team_a?.id,
+          team_b_id: ev.team_b?.id,
+          team_a_name: ev.team_a?.name,
+          team_b_name: ev.team_b?.name,
+        }
+      } catch (err) {
+        console.warn(`event detail ${id}: ${err.message}`)
+        cache[id] = { id, goals: [], violations: [], error: true }
+      }
+    })
+  }
+  return cache
+}
+
+function resolvePenaltyTeamId(v, teamAId, teamBId, teamAName, teamBName) {
+  if (v.violator?.team_id) return v.violator.team_id
+  const desc = v.description || ''
+  if (teamAName && desc.includes(`(${teamAName})`)) return teamAId
+  if (teamBName && desc.includes(`(${teamBName})`)) return teamBId
+  return null
+}
+
+function applyGameToBag(bag, detail, teamId, rolesByTeam) {
+  if (!detail || detail.error) return
+
+  const roles = rolesByTeam.get(teamId) || new Map()
+
+  for (const g of detail.goals || []) {
+    const status = g.status || ''
+    const abbr = g.status_abbr || ''
+    const isPP = status.includes('большинстве') || abbr === 'бол'
+    const authorTeam = g.author?.team_id
+    if (isPP && authorTeam === teamId) bag.ppGoals += 1
+    if (isPP && authorTeam && authorTeam !== teamId) bag.pkGoalsAgainst += 1
+
+    if (g.author?.team_id === teamId && g.author.name) {
+      const key = normName(g.author.name)
+      const p = ensurePlayer(bag, key, g.author.name, roles.get(key))
+      p.g += 1
+    }
+    for (const a of g.assistants || []) {
+      if (a.team_id && a.team_id !== teamId) continue
+      // assistants sometimes omit team_id; credit if author is our team
+      if (!a.team_id && g.author?.team_id !== teamId) continue
+      if (!a.name) continue
+      const key = normName(a.name)
+      const p = ensurePlayer(bag, key, a.name, roles.get(key))
+      p.a += 1
+    }
+  }
+
+  const byTime = new Map()
+  for (const v of detail.violations || []) {
+    const tid = resolvePenaltyTeamId(
+      v,
+      detail.team_a_id,
+      detail.team_b_id,
+      detail.team_a_name,
+      detail.team_b_name,
+    )
+    if (!tid) continue
+    const t = v.time ?? 0
+    if (!byTime.has(t)) byTime.set(t, new Set())
+    byTime.get(t).add(tid)
+  }
+  for (const teams of byTime.values()) {
+    if (teams.size !== 1) continue // coincidental / 4-on-4
+    const penalized = [...teams][0]
+    if (penalized === teamId) bag.pkOpps += 1
+    else bag.ppOpps += 1
+  }
+}
+
+function topPlayers(bag, rolePred, metric, n = 3) {
+  return [...bag.players.values()]
+    .filter((p) => rolePred(p.roleKey))
+    .map((p) => ({ ...p, pts: p.g + p.a, metric: metric === 'g' ? p.g : metric === 'a' ? p.a : p.g + p.a }))
+    .filter((p) => p.metric > 0)
+    .sort((a, b) => b.metric - a.metric || b.pts - a.pts || b.g - a.g || a.name.localeCompare(b.name, 'ru'))
+    .slice(0, n)
+}
+
+function fmtTop(list, metric) {
+  if (!list.length) return 'нет данных'
+  return list
+    .map((p, i) => {
+      const val =
+        metric === 'g' ? `${p.g} Г` : metric === 'a' ? `${p.a} П` : `${p.pts} О (${p.g}+${p.a})`
+      return `${i + 1}) ${shortName(p.name)} — ${val}`
+    })
+    .join('; ')
+}
+
+function pct(num, den) {
+  if (!den) return '—'
+  return `${Math.round((1000 * num) / den) / 10}%`
+}
+
+function stageStatsBlock(teamName, bag, stageLabel) {
+  const lines = [`${teamName} · статистика ${stageLabel} до матча:`]
+  if (![...bag.players.values()].some((p) => p.g + p.a > 0) && bag.ppOpps === 0 && bag.pkOpps === 0) {
+    lines.push('пока нет данных по стадии')
+    return lines
+  }
+
+  lines.push('Нападающие:')
+  lines.push(`  бомбардиры: ${fmtTop(topPlayers(bag, isForward, 'pts'), 'pts')}`)
+  lines.push(`  снайперы: ${fmtTop(topPlayers(bag, isForward, 'g'), 'g')}`)
+  lines.push(`  ассистенты: ${fmtTop(topPlayers(bag, isForward, 'a'), 'a')}`)
+  lines.push('Защитники:')
+  lines.push(`  бомбардиры: ${fmtTop(topPlayers(bag, isDefense, 'pts'), 'pts')}`)
+  lines.push(`  снайперы: ${fmtTop(topPlayers(bag, isDefense, 'g'), 'g')}`)
+  lines.push(`  ассистенты: ${fmtTop(topPlayers(bag, isDefense, 'a'), 'a')}`)
+  lines.push(
+    `Команда: реал. большинства ${pct(bag.ppGoals, bag.ppOpps)} (${bag.ppGoals}/${bag.ppOpps}), нейтр. меньшинства ${pct(bag.pkOpps - bag.pkGoalsAgainst, bag.pkOpps)} (${bag.pkOpps - bag.pkGoalsAgainst}/${bag.pkOpps})`,
+  )
+  return lines
+}
+
+function buildStageTimelines(teamIds, eventsByTeam, details, rolesByTeam) {
+  const timelines = new Map()
+  for (const teamId of teamIds) {
+    const finished = (eventsByTeam.get(teamId) || [])
+      .filter(isFinished)
+      .sort((a, b) => eventStartMs(a) - eventStartMs(b))
+    const bag = emptyTeamBag()
+    const points = []
+    for (const ev of finished) {
+      const before = cloneTeamBag(bag)
+      points.push({ ms: eventStartMs(ev), before })
+      applyGameToBag(bag, details[ev.id], teamId, rolesByTeam)
+    }
+    points.push({ ms: Number.POSITIVE_INFINITY, before: cloneTeamBag(bag) })
+    timelines.set(teamId, points)
+  }
+  return timelines
+}
+
+function statsBefore(timeline, beforeMs) {
+  if (!timeline?.length) return emptyTeamBag()
+  for (const p of timeline) {
+    if (p.ms >= beforeMs) return p.before
+  }
+  return timeline[timeline.length - 1].before
+}
+
+function buildDescription(event, seasonEvents, oppPool, season, stageLabel, timelines) {
   const home = event.team_a.id === SIBIR_ID
   const opp = opponentOf(event, SIBIR_ID)
   const tbd = isTimeTbd(event) && !isFinished(event)
   const sibirForm = lastFormEntries(seasonEvents, SIBIR_ID)
   const oppForm = lastFormEntries(oppPool, opp.id)
   const h2h = headToHeadSeason(seasonEvents, opp.id)
+  const beforeMs = eventStartMs(event)
+  const sibirBag = statsBefore(timelines.get(SIBIR_ID), beforeMs)
+  const oppBag = statsBefore(timelines.get(opp.id), beforeMs)
 
   const header = [
     'КХЛ',
@@ -337,15 +606,19 @@ function buildDescription(event, seasonEvents, oppPool, season) {
   return [
     header,
     '',
-    ...formBlock('Форма Сибири (этот сезон)', sibirForm),
+    ...formBlock(`Форма Сибири (${stageLabel})`, sibirForm),
     '',
-    ...formBlock(`Форма ${opp.name} (этот сезон)`, oppForm),
+    ...formBlock(`Форма ${opp.name} (${stageLabel})`, oppForm),
     '',
     ...h2hLines(h2h, season),
+    '',
+    ...stageStatsBlock('Сибирь', sibirBag, stageLabel),
+    '',
+    ...stageStatsBlock(opp.name, oppBag, stageLabel),
   ].join('\n')
 }
 
-function buildIcs(events, oppPools, season) {
+function buildIcs(events, oppPools, season, stageLabel, timelines) {
   const now = formatUtcStamp(Date.now())
   const lines = [
     'BEGIN:VCALENDAR',
@@ -380,7 +653,14 @@ function buildIcs(events, oppPools, season) {
     const opp = opponentOf(event, SIBIR_ID)
     const summary = home ? `Сибирь — ${opp.name}` : `${opp.name} — Сибирь`
     const tbd = isTimeTbd(event) && !isFinished(event)
-    const desc = buildDescription(event, events, oppPools.get(opp.id) || [], season)
+    const desc = buildDescription(
+      event,
+      events,
+      oppPools.get(opp.id) || [],
+      season,
+      stageLabel,
+      timelines,
+    )
 
     lines.push('BEGIN:VEVENT', `UID:sibir-${event.id}@hcsibir-calendar`, `DTSTAMP:${now}`)
 
@@ -410,6 +690,7 @@ const data = await getJson('/data.json')
 const stageId = data.current_stage_id
 const stage = data.stages_v2.find((s) => s.id === stageId)
 const season = stage?.season ?? String(stageId)
+const stageLabel = stage?.type === 'playoff' ? 'плей-офф' : 'регулярка'
 
 const seasonEvents = await fetchTeamEvents(SIBIR_ID, stageId)
 
@@ -425,19 +706,54 @@ const timesApplied = applyWebsiteTimes(seasonEvents, websiteGames)
 const timedCount = seasonEvents.filter((e) => e._hasWebsiteTime).length
 
 const oppIds = [...new Set(seasonEvents.map((e) => opponentOf(e, SIBIR_ID).id))]
+const teamIds = [SIBIR_ID, ...oppIds]
+
 const oppPools = new Map()
+const eventsByTeam = new Map([[SIBIR_ID, seasonEvents]])
 await Promise.all(
   oppIds.map(async (oppId) => {
-    oppPools.set(oppId, await fetchTeamEvents(oppId, stageId))
+    const evs = await fetchTeamEvents(oppId, stageId)
+    oppPools.set(oppId, evs)
+    eventsByTeam.set(oppId, evs)
   }),
 )
 
-const ics = buildIcs(seasonEvents, oppPools, season)
+const rolesByTeam = new Map()
+await Promise.all(
+  teamIds.map(async (teamId) => {
+    try {
+      const team = await fetchTeam(teamId, stageId)
+      const roles = new Map()
+      for (const p of team.players || []) {
+        roles.set(normName(p.name), p.role_key || 'forward')
+      }
+      rolesByTeam.set(teamId, roles)
+    } catch (err) {
+      console.warn(`roster ${teamId}: ${err.message}`)
+      rolesByTeam.set(teamId, new Map())
+    }
+  }),
+)
 
-const root = join(dirname(fileURLToPath(import.meta.url)), '..')
-const outPath = join(root, 'sibir.ics')
+const finishedIds = [
+  ...new Set(
+    [...eventsByTeam.values()]
+      .flat()
+      .filter(isFinished)
+      .map((e) => e.id),
+  ),
+]
+const detailCache = loadDetailCache()
+await fetchEventDetails(finishedIds, detailCache)
+saveDetailCache(detailCache)
+console.log(`Event details cached: ${finishedIds.length} finished`)
+
+const timelines = buildStageTimelines(teamIds, eventsByTeam, detailCache, rolesByTeam)
+const ics = buildIcs(seasonEvents, oppPools, season, stageLabel, timelines)
+
+const outPath = join(ROOT, 'sibir.ics')
 writeFileSync(outPath, ics, 'utf8')
-console.log(`Wrote ${seasonEvents.length} events (${season}) → ${outPath}`)
+console.log(`Wrote ${seasonEvents.length} events (${season}, ${stageLabel}) → ${outPath}`)
 console.log(`Website times applied: ${timesApplied}/${seasonEvents.length} (timed ${timedCount})`)
 console.log(`Opponents enriched: ${oppIds.length}`)
 console.log(`Timezone: ${TZ}`)
