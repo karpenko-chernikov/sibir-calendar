@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Превью карточки матча — ХК Сибирь</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #1c1c1e;
+        --card: #2c2c2e;
+        --line: #3a3a3c;
+        --text: #f5f5f7;
+        --muted: #8e8e93;
+        --blue: #0a84ff;
+        --win: #30d158;
+        --loss: #ff453a;
+        --gray: #98989d;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font: 15px/1.45 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
+        background:
+          radial-gradient(900px 500px at 20% 0%, #243044, transparent 60%),
+          #111;
+        color: var(--text);
+        padding: 32px 16px 48px;
+      }
+      .wrap {
+        width: min(560px, 100%);
+        margin: 0 auto;
+      }
+      h1 {
+        margin: 0 0 8px;
+        font-size: 22px;
+        font-weight: 700;
+      }
+      .sub {
+        margin: 0 0 24px;
+        color: var(--muted);
+        font-size: 14px;
+      }
+      .bubble {
+        background: var(--card);
+        border-radius: 18px;
+        padding: 18px 18px 16px;
+        box-shadow: 0 18px 50px rgba(0,0,0,.35);
+        position: relative;
+      }
+      .bubble:after {
+        content: "";
+        position: absolute;
+        left: 42px;
+        bottom: -10px;
+        width: 20px;
+        height: 20px;
+        background: var(--card);
+        transform: rotate(45deg);
+        border-radius: 3px;
+      }
+      .top {
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        align-items: flex-start;
+      }
+      .title {
+        font-size: 28px;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        margin: 0;
+      }
+      .cal {
+        color: var(--blue);
+        font-size: 15px;
+        white-space: nowrap;
+      }
+      .meta {
+        margin-top: 14px;
+        display: grid;
+        gap: 10px;
+      }
+      .row {
+        display: grid;
+        grid-template-columns: 28px 1fr;
+        gap: 10px;
+        align-items: start;
+        color: var(--text);
+      }
+      .icon {
+        width: 22px;
+        height: 22px;
+        border-radius: 6px;
+        background: #3a3a3c;
+        display: grid;
+        place-items: center;
+        font-size: 12px;
+        color: var(--muted);
+      }
+      .notes {
+        margin-top: 4px;
+        white-space: pre-wrap;
+        font-size: 14px;
+        line-height: 1.5;
+        color: #e5e5ea;
+      }
+      .notes .win { color: var(--win); }
+      .notes .loss { color: var(--loss); }
+      .notes .dim { color: var(--muted); }
+      .footer {
+        margin-top: 18px;
+        display: flex;
+        justify-content: flex-end;
+      }
+      .btn {
+        border: 0;
+        background: transparent;
+        color: var(--blue);
+        font: inherit;
+        font-weight: 600;
+        padding: 8px 4px;
+      }
+      .grid {
+        margin-top: 28px;
+        display: grid;
+        gap: 18px;
+      }
+      .mini {
+        background: rgba(44,44,46,.7);
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        padding: 14px 16px;
+      }
+      .mini h2 {
+        margin: 0 0 8px;
+        font-size: 13px;
+        color: var(--muted);
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+      }
+      .mini pre {
+        margin: 0;
+        white-space: pre-wrap;
+        font: 13px/1.45 ui-monospace, SFMono-Regular, Menlo, monospace;
+        color: #d1d1d6;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>Как будет выглядеть карточка</h1>
+      <p class="sub">
+        Пример середины регулярки 2026/2027. Данные вымышленные — чтобы показать формат.
+        В Apple Calendar это блок «Заметки» у события.
+      </p>
+
+      <div class="bubble">
+        <div class="top">
+          <h2 class="title">Сибирь — Амур</h2>
+          <div class="cal">ХК Сибирь ▾</div>
+        </div>
+        <div class="meta">
+          <div class="row">
+            <div class="icon">📍</div>
+            <div>Новосибирск</div>
+          </div>
+          <div class="row">
+            <div class="icon">📅</div>
+            <div>10 сент. 2026 г., 19:30 – 22:00</div>
+          </div>
+          <div class="row">
+            <div class="icon">☰</div>
+            <div class="notes">КХЛ · Регулярный чемпионат 2026/2027 · Дома · Новосибирск
+
+Форма Сибири (регулярка): <span class="win">🟢</span> <span class="win">🟢</span> <span class="loss">🔴</span> <span class="win">🟢</span> <span class="win">🟢</span>
+<span class="win">🟢</span> 01.09.2026  Сибирь — Нефтехимик  3:1
+<span class="win">🟢</span> 03.09.2026  Барыс — Сибирь  2:4
+<span class="loss">🔴</span> 05.09.2026  Ак Барс — Сибирь  3:2 (ОТ)
+<span class="win">🟢</span> 07.09.2026  Сибирь — Автомобилист  4:1
+<span class="win">🟢</span> 09.09.2026  Динамо Мн — Сибирь  1:2
+
+Форма Амур (регулярка): <span class="loss">🔴</span> <span class="win">🟢</span> <span class="loss">🔴</span> <span class="loss">🔴</span> <span class="win">🟢</span>
+<span class="loss">🔴</span> 01.09.2026  Амур — Адмирал  1:3
+<span class="win">🟢</span> 03.09.2026  Амур — СКА  2:1
+<span class="loss">🔴</span> 05.09.2026  Металлург Мг — Амур  5:2
+<span class="loss">🔴</span> 07.09.2026  Трактор — Амур  3:0
+<span class="win">🟢</span> 09.09.2026  Амур — Барыс  4:3 (Б)
+
+Все матчи 2026/2027:
+10.09.2026  Сибирь — Амур  -:-
+17.12.2026  Сибирь — Амур  -:-
+28.12.2026  Амур — Сибирь  -:-
+01.01.2027  Амур — Сибирь  -:-
+
+Сибирь · статистика регулярка до матча:
+Нападающие:
+  бомбардиры: 1) Кузнецов Е. — 11 О (5+6); 2) Коршков Е. — 9 О (4+5); 3) Кошелев С. — 8 О (3+5)
+  снайперы: 1) Кузнецов Е. — 5 Г; 2) Коршков Е. — 4 Г; 3) Яковлев А. — 3 Г
+  ассистенты: 1) Кузнецов Е. — 6 П; 2) Кошелев С. — 5 П; 3) Коршков Е. — 5 П
+Защитники:
+  бомбардиры: 1) Осипов М. — 7 О (1+6); 2) Аланов Е. — 6 О (0+6); 3) Приски Ч. — 4 О (2+2)
+  снайперы: 1) Приски Ч. — 2 Г; 2) Осипов М. — 1 Г; 3) Гордеев Ф. — 1 Г
+  ассистенты: 1) Осипов М. — 6 П; 2) Аланов Е. — 6 П; 3) Приски Ч. — 2 П
+Команда: реал. большинства 22.2% (6/27), нейтр. меньшинства 84.0% (21/25)
+
+Амур · статистика регулярка до матча:
+Нападающие:
+  бомбардиры: 1) Ивашкин П. — 8 О (4+4); 2) Гретцки-like — 7 О (2+5); 3) Смирнов А. — 6 О (3+3)
+  снайперы: 1) Ивашкин П. — 4 Г; 2) Смирнов А. — 3 Г; 3) Орлов Д. — 2 Г
+  ассистенты: 1) Гретцки-like — 5 П; 2) Ивашкин П. — 4 П; 3) Смирнов А. — 3 П
+Защитники:
+  бомбардиры: 1) Петров И. — 5 О (1+4); 2) Сидоров К. — 3 О (0+3); 3) Волков Н. — 2 О (1+1)
+  снайперы: 1) Петров И. — 1 Г; 2) Волков Н. — 1 Г
+  ассистенты: 1) Петров И. — 4 П; 2) Сидоров К. — 3 П; 3) Волков Н. — 1 П
+Команда: реал. большинства 15.4% (4/26), нейтр. меньшинства 76.9% (20/26)</div>
+          </div>
+        </div>
+        <div class="footer">
+          <button class="btn" type="button">Отписаться</button>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="mini">
+          <h2>В сетке календаря</h2>
+          <pre>Сибирь — Амур
+19:30–22:00</pre>
+        </div>
+        <div class="mini">
+          <h2>Что видно только после открытия</h2>
+          <pre>форма с соперником и счётом
+все очные в сезоне
+топы игроков + большинство/меньшинство</pre>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
