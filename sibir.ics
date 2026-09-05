@@ -17,7 +17,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:sibir-3000067@hcsibir-calendar
-DTSTAMP:20260905T075850Z
+DTSTAMP:20260905T135901Z
 DTSTART;TZID=Asia/Novosibirsk:20260905T210000
 DTEND;TZID=Asia/Novosibirsk:20260906T015000
 SUMMARY:Ак Барс — Сибирь
@@ -32,7 +32,7 @@ LOCATION:Казань
 END:VEVENT
 BEGIN:VEVENT
 UID:sibir-3000091@hcsibir-calendar
-DTSTAMP:20260905T075850Z
+DTSTAMP:20260905T135901Z
 DTSTART;TZID=Asia/Novosibirsk:20260907T210000
 DTEND;TZID=Asia/Novosibirsk:20260908T015000
 SUMMARY:Барыс — Сибирь
@@ -48,7 +48,7 @@ LOCATION:Астана
 END:VEVENT
 BEGIN:VEVENT
 UID:sibir-3000151@hcsibir-calendar
-DTSTAMP:20260905T075850Z
+DTSTAMP:20260905T135901Z
 DTSTART;TZID=Asia/Novosibirsk:20260910T193000
 DTEND;TZID=Asia/Novosibirsk:20260911T002500
 SUMMARY:Сибирь — Амур
@@ -64,23 +64,28 @@ LOCATION:Новосибирск
 END:VEVENT
 BEGIN:VEVENT
 UID:sibir-3000195@hcsibir-calendar
-DTSTAMP:20260905T075850Z
+DTSTAMP:20260905T135901Z
 DTSTART;TZID=Asia/Novosibirsk:20260913T173000
 DTEND;TZID=Asia/Novosibirsk:20260913T222500
 SUMMARY:Сибирь — Автомобилист
 DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · Дома · Новосибирск\n\nФо
  рма Сибири (регулярка): ⚪ ⚪ ⚪ ⚪ ⚪\nещё нет сыгранных матчей\n\nФорма Автом
- обилист (регулярка): ⚪ ⚪ ⚪ ⚪ ⚪\nещё нет сыгранных матчей\n\nВсе матчи 2026
- /2027:\n13.09.2026  Сибирь — Автомобилист  -:-\n20.11.2026  Сибирь — Автом
- обилист  -:-\n28.01.2027  Автомобилист — Сибирь  -:-\n18.03.2027  Автомоби
- лист — Сибирь  -:-\n\nСибирь · статистика регулярка до матча:\nпока нет да
- нных по стадии\n\nАвтомобилист · статистика регулярка до матча:\nпока нет 
- данных по стадии
+ обилист (регулярка): ⚪ ⚪ ⚪ ⚪ 🟢\n🟢 05.09.2026  Автомобилист — Динамо М  2
+ :1\n\nВсе матчи 2026/2027:\n13.09.2026  Сибирь — Автомобилист  -:-\n20.11.
+ 2026  Сибирь — Автомобилист  -:-\n28.01.2027  Автомобилист — Сибирь  -:-\n
+ 18.03.2027  Автомобилист — Сибирь  -:-\n\nСибирь · статистика регулярка до
+  матча:\nпока нет данных по стадии\n\nАвтомобилист · статистика регулярка 
+ до матча:\nНападающие:\n  бомбардиры: 1) Барабанов А. — 1 О (1+0)\; 2) Сле
+ пышев А. — 1 О (1+0)\; 3) Голышев А. — 1 О (0+1)\n  снайперы: 1) Барабанов
+  А. — 1 Г\; 2) Слепышев А. — 1 Г\n  ассистенты: 1) Голышев А. — 1 П\; 2) Р
+ ужичка А. — 1 П\nЗащитники:\n  бомбардиры: 1) Карпухин И. — 1 О (0+1)\n  с
+ найперы: нет данных\n  ассистенты: 1) Карпухин И. — 1 П\nКоманда: реал. бо
+ льшинства 0% (0/3)\, нейтр. меньшинства 100% (1/1)
 LOCATION:Новосибирск
 END:VEVENT
 BEGIN:VEVENT
 UID:sibir-3000231@hcsibir-calendar
-DTSTAMP:20260905T075850Z
+DTSTAMP:20260905T135901Z
 DTSTART;TZID=Asia/Novosibirsk:20260916T193000
 DTEND;TZID=Asia/Novosibirsk:20260917T002500
 SUMMARY:Сибирь — Нефтехимик
@@ -96,7 +101,7 @@ LOCATION:Новосибирск
 END:VEVENT
 BEGIN:VEVENT
 UID:sibir-3000267@hcsibir-calendar
-DTSTAMP:20260905T075850Z
+DTSTAMP:20260905T135901Z
 DTSTART;TZID=Asia/Novosibirsk:20260918T231000
 DTEND;TZID=Asia/Novosibirsk:20260919T040500
 SUMMARY:Динамо Мн — Сибирь
@@ -110,7 +115,7 @@ LOCATION:Минск
 END:VEVENT
 BEGIN:VEVENT
 UID:sibir-3000307@hcsibir-calendar
-DTSTAMP:20260905T075850Z
+DTSTAMP:20260905T135901Z
 DTSTART;TZID=Asia/Novosibirsk:20260920T210000
 DTEND;TZID=Asia/Novosibirsk:20260921T015500
 SUMMARY:ХК Сочи — Сибирь
@@ -124,7 +129,7 @@ LOCATION:ФТ Сириус
 END:VEVENT
 BEGIN:VEVENT
 UID:sibir-3000371@hcsibir-calendar
-DTSTAMP:20260905T075850Z
+DTSTAMP:20260905T135901Z
 DTSTART;TZID=Asia/Novosibirsk:20260924T193000
 DTEND;TZID=Asia/Novosibirsk:20260925T002500
 SUMMARY:Сибирь — Ак Барс
@@ -139,35 +144,51 @@ LOCATION:Новосибирск
 END:VEVENT
 BEGIN:VEVENT
 UID:sibir-3000423@hcsibir-calendar
-DTSTAMP:20260905T075850Z
+DTSTAMP:20260905T135901Z
 DTSTART;TZID=Asia/Novosibirsk:20260927T173000
 DTEND;TZID=Asia/Novosibirsk:20260927T222500
 SUMMARY:Сибирь — Локомотив
 DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · Дома · Новосибирск\n\nФо
  рма Сибири (регулярка): ⚪ ⚪ ⚪ ⚪ ⚪\nещё нет сыгранных матчей\n\nФорма Локом
- отив (регулярка): ⚪ ⚪ ⚪ ⚪ ⚪\nещё нет сыгранных матчей\n\nВсе матчи 2026/20
- 27:\n27.09.2026  Сибирь — Локомотив  -:-\n30.09.2026  Локомотив — Сибирь  
- -:-\n\nСибирь · статистика регулярка до матча:\nпока нет данных по стадии\
- n\nЛокомотив · статистика регулярка до матча:\nпока нет данных по стадии
+ отив (регулярка): ⚪ ⚪ ⚪ ⚪ 🟢\n🟢 05.09.2026  Локомотив — Трактор  5:1\n\nВ
+ се матчи 2026/2027:\n27.09.2026  Сибирь — Локомотив  -:-\n30.09.2026  Локо
+ мотив — Сибирь  -:-\n\nСибирь · статистика регулярка до матча:\nпока нет д
+ анных по стадии\n\nЛокомотив · статистика регулярка до матча:\nНападающие:
+ \n  бомбардиры: 1) Берёзкин М. — 2 О (1+1)\; 2) Фьоре Д. — 2 О (1+1)\; 3) 
+ Котков М. — 1 О (1+0)\n  снайперы: 1) Берёзкин М. — 1 Г\; 2) Фьоре Д. — 1 
+ Г\; 3) Котков М. — 1 Г\n  ассистенты: 1) Берёзкин М. — 1 П\; 2) Фьоре Д. —
+  1 П\; 3) Иванов Г. — 1 П\nЗащитники:\n  бомбардиры: 1) Рафиков Р. — 2 О (
+ 0+2)\; 2) Береглазов А. — 1 О (0+1)\; 3) Елесин А. — 1 О (0+1)\n  снайперы
+ : нет данных\n  ассистенты: 1) Рафиков Р. — 2 П\; 2) Береглазов А. — 1 П\;
+  3) Елесин А. — 1 П\nКоманда: реал. большинства 33.3% (2/6)\, нейтр. меньш
+ инства 100% (2/2)
 LOCATION:Новосибирск
 END:VEVENT
 BEGIN:VEVENT
 UID:sibir-3000475@hcsibir-calendar
-DTSTAMP:20260905T075850Z
+DTSTAMP:20260905T135901Z
 DTSTART;TZID=Asia/Novosibirsk:20260930T233000
 DTEND;TZID=Asia/Novosibirsk:20261001T042000
 SUMMARY:Локомотив — Сибирь
 DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · В гостях · Ярославль\n\n
  Форма Сибири (регулярка): ⚪ ⚪ ⚪ ⚪ ⚪\nещё нет сыгранных матчей\n\nФорма Лок
- омотив (регулярка): ⚪ ⚪ ⚪ ⚪ ⚪\nещё нет сыгранных матчей\n\nВсе матчи 2026/
- 2027:\n27.09.2026  Сибирь — Локомотив  -:-\n30.09.2026  Локомотив — Сибирь
-   -:-\n\nСибирь · статистика регулярка до матча:\nпока нет данных по стади
- и\n\nЛокомотив · статистика регулярка до матча:\nпока нет данных по стадии
+ омотив (регулярка): ⚪ ⚪ ⚪ ⚪ 🟢\n🟢 05.09.2026  Локомотив — Трактор  5:1\n\
+ nВсе матчи 2026/2027:\n27.09.2026  Сибирь — Локомотив  -:-\n30.09.2026  Ло
+ комотив — Сибирь  -:-\n\nСибирь · статистика регулярка до матча:\nпока нет
+  данных по стадии\n\nЛокомотив · статистика регулярка до матча:\nНападающи
+ е:\n  бомбардиры: 1) Берёзкин М. — 2 О (1+1)\; 2) Фьоре Д. — 2 О (1+1)\; 3
+ ) Котков М. — 1 О (1+0)\n  снайперы: 1) Берёзкин М. — 1 Г\; 2) Фьоре Д. — 
+ 1 Г\; 3) Котков М. — 1 Г\n  ассистенты: 1) Берёзкин М. — 1 П\; 2) Фьоре Д.
+  — 1 П\; 3) Иванов Г. — 1 П\nЗащитники:\n  бомбардиры: 1) Рафиков Р. — 2 О
+  (0+2)\; 2) Береглазов А. — 1 О (0+1)\; 3) Елесин А. — 1 О (0+1)\n  снайпе
+ ры: нет данных\n  ассистенты: 1) Рафиков Р. — 2 П\; 2) Береглазов А. — 1 П
+ \; 3) Елесин А. — 1 П\nКоманда: реал. большинства 33.3% (2/6)\, нейтр. мен
+ ьшинства 100% (2/2)
 LOCATION:Ярославль
 END:VEVENT
 BEGIN:VEVENT
 UID:sibir-3000507@hcsibir-calendar
-DTSTAMP:20260905T075850Z
+DTSTAMP:20260905T135901Z
 DTSTART;TZID=Asia/Novosibirsk:20261002T210000
 DTEND;TZID=Asia/Novosibirsk:20261003T015500
 SUMMARY:Салават Юлаев — Сибирь
@@ -183,7 +204,7 @@ LOCATION:Уфа
 END:VEVENT
 BEGIN:VEVENT
 UID:sibir-3000543@hcsibir-calendar
-DTSTAMP:20260905T075850Z
+DTSTAMP:20260905T135901Z
 DTSTART;TZID=Asia/Novosibirsk:20261004T180000
 DTEND;TZID=Asia/Novosibirsk:20261004T225500
 SUMMARY:Нефтехимик — Сибирь
@@ -199,7 +220,7 @@ LOCATION:Нижнекамск
 END:VEVENT
 BEGIN:VEVENT
 UID:sibir-3000587@hcsibir-calendar
-DTSTAMP:20260905T075850Z
+DTSTAMP:20260905T135901Z
 DTSTART;TZID=Asia/Novosibirsk:20261007T193000
 DTEND;TZID=Asia/Novosibirsk:20261008T002500
 SUMMARY:Сибирь — Салават Юлаев
@@ -215,22 +236,27 @@ LOCATION:Новосибирск
 END:VEVENT
 BEGIN:VEVENT
 UID:sibir-3000635@hcsibir-calendar
-DTSTAMP:20260905T075850Z
+DTSTAMP:20260905T135901Z
 DTSTART;TZID=Asia/Novosibirsk:20261010T180000
 DTEND;TZID=Asia/Novosibirsk:20261010T225500
 SUMMARY:Трактор — Сибирь
 DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · В гостях · Челябинск\n\n
  Форма Сибири (регулярка): ⚪ ⚪ ⚪ ⚪ ⚪\nещё нет сыгранных матчей\n\nФорма Тра
- ктор (регулярка): ⚪ ⚪ ⚪ ⚪ ⚪\nещё нет сыгранных матчей\n\nВсе матчи 2026/20
- 27:\n10.10.2026  Трактор — Сибирь  -:-\n26.10.2026  Трактор — Сибирь  -:-\
- n17.11.2026  Сибирь — Трактор  -:-\n17.01.2027  Сибирь — Трактор  -:-\n\nС
- ибирь · статистика регулярка до матча:\nпока нет данных по стадии\n\nТракт
- ор · статистика регулярка до матча:\nпока нет данных по стадии
+ ктор (регулярка): ⚪ ⚪ ⚪ ⚪ 🔴\n🔴 05.09.2026  Локомотив — Трактор  5:1\n\nВ
+ се матчи 2026/2027:\n10.10.2026  Трактор — Сибирь  -:-\n26.10.2026  Тракто
+ р — Сибирь  -:-\n17.11.2026  Сибирь — Трактор  -:-\n17.01.2027  Сибирь — Т
+ рактор  -:-\n\nСибирь · статистика регулярка до матча:\nпока нет данных по
+  стадии\n\nТрактор · статистика регулярка до матча:\nНападающие:\n  бомбар
+ диры: 1) Светлаков А. — 1 О (1+0)\; 2) Катчук Б. — 1 О (0+1)\; 3) Рольгизе
+ р М. — 1 О (0+1)\n  снайперы: 1) Светлаков А. — 1 Г\n  ассистенты: 1) Катч
+ ук Б. — 1 П\; 2) Рольгизер М. — 1 П\nЗащитники:\n  бомбардиры: нет данных\
+ n  снайперы: нет данных\n  ассистенты: нет данных\nКоманда: реал. большинс
+ тва 0% (0/2)\, нейтр. меньшинства 66.7% (4/6)
 LOCATION:Челябинск
 END:VEVENT
 BEGIN:VEVENT
 UID:sibir-3000663@hcsibir-calendar
-DTSTAMP:20260905T075850Z
+DTSTAMP:20260905T135901Z
 DTSTART;TZID=Asia/Novosibirsk:20261012T213000
 DTEND;TZID=Asia/Novosibirsk:20261013T022500
 SUMMARY:Барыс — Сибирь
@@ -246,7 +272,7 @@ LOCATION:Астана
 END:VEVENT
 BEGIN:VEVENT
 UID:sibir-3000691@hcsibir-calendar
-DTSTAMP:20260905T075850Z
+DTSTAMP:20260905T135901Z
 DTSTART;TZID=Asia/Novosibirsk:20261014T210000
 DTEND;TZID=Asia/Novosibirsk:20261015T015500
 SUMMARY:Салават Юлаев — Сибирь
@@ -262,7 +288,7 @@ LOCATION:Уфа
 END:VEVENT
 BEGIN:VEVENT
 UID:sibir-3000747@hcsibir-calendar
-DTSTAMP:20260905T075850Z
+DTSTAMP:20260905T135901Z
 DTSTART;TZID=Asia/Novosibirsk:20261017T173000
 DTEND;TZID=Asia/Novosibirsk:20261017T222500
 SUMMARY:Сибирь — Барыс
@@ -278,21 +304,26 @@ LOCATION:Новосибирск
 END:VEVENT
 BEGIN:VEVENT
 UID:sibir-3000795@hcsibir-calendar
-DTSTAMP:20260905T075850Z
+DTSTAMP:20260905T135901Z
 DTSTART;TZID=Asia/Novosibirsk:20261020T233000
 DTEND;TZID=Asia/Novosibirsk:20261021T042500
 SUMMARY:Динамо М — Сибирь
 DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · В гостях · Москва\n\nФор
  ма Сибири (регулярка): ⚪ ⚪ ⚪ ⚪ ⚪\nещё нет сыгранных матчей\n\nФорма Динамо
-  М (регулярка): ⚪ ⚪ ⚪ ⚪ ⚪\nещё нет сыгранных матчей\n\nВсе матчи 2026/2027
- :\n20.10.2026  Динамо М — Сибирь  -:-\n15.11.2026  Сибирь — Динамо М  -:-\
- n\nСибирь · статистика регулярка до матча:\nпока нет данных по стадии\n\nД
- инамо М · статистика регулярка до матча:\nпока нет данных по стадии
+  М (регулярка): ⚪ ⚪ ⚪ ⚪ 🔴\n🔴 05.09.2026  Автомобилист — Динамо М  2:1\n\
+ nВсе матчи 2026/2027:\n20.10.2026  Динамо М — Сибирь  -:-\n15.11.2026  Сиб
+ ирь — Динамо М  -:-\n\nСибирь · статистика регулярка до матча:\nпока нет д
+ анных по стадии\n\nДинамо М · статистика регулярка до матча:\nНападающие:\
+ n  бомбардиры: 1) Тертышный Н. — 1 О (1+0)\; 2) Мартынов И. — 1 О (0+1)\; 
+ 3) Никонов А. — 1 О (0+1)\n  снайперы: 1) Тертышный Н. — 1 Г\n  ассистенты
+ : 1) Мартынов И. — 1 П\; 2) Никонов А. — 1 П\nЗащитники:\n  бомбардиры: не
+ т данных\n  снайперы: нет данных\n  ассистенты: нет данных\nКоманда: реал.
+  большинства 0% (0/1)\, нейтр. меньшинства 100% (3/3)
 LOCATION:Москва
 END:VEVENT
 BEGIN:VEVENT
 UID:sibir-3000823@hcsibir-calendar
-DTSTAMP:20260905T075850Z
+DTSTAMP:20260905T135901Z
 DTSTART;TZID=Asia/Novosibirsk:20261022T233000
 DTEND;TZID=Asia/Novosibirsk:20261023T042500
 SUMMARY:СКА — Сибирь
@@ -306,7 +337,7 @@ LOCATION:Санкт-Петербург
 END:VEVENT
 BEGIN:VEVENT
 UID:sibir-3000859@hcsibir-calendar
-DTSTAMP:20260905T075850Z
+DTSTAMP:20260905T135901Z
 DTSTART;TZID=Asia/Novosibirsk:20261024T183000
 DTEND;TZID=Asia/Novosibirsk:20261024T232500
 SUMMARY:Металлург Мг — Сибирь
@@ -322,22 +353,27 @@ LOCATION:Магнитогорск
 END:VEVENT
 BEGIN:VEVENT
 UID:sibir-3000895@hcsibir-calendar
-DTSTAMP:20260905T075850Z
+DTSTAMP:20260905T135901Z
 DTSTART;TZID=Asia/Novosibirsk:20261026T210000
 DTEND;TZID=Asia/Novosibirsk:20261027T015500
 SUMMARY:Трактор — Сибирь
 DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · В гостях · Челябинск\n\n
  Форма Сибири (регулярка): ⚪ ⚪ ⚪ ⚪ ⚪\nещё нет сыгранных матчей\n\nФорма Тра
- ктор (регулярка): ⚪ ⚪ ⚪ ⚪ ⚪\nещё нет сыгранных матчей\n\nВсе матчи 2026/20
- 27:\n10.10.2026  Трактор — Сибирь  -:-\n26.10.2026  Трактор — Сибирь  -:-\
- n17.11.2026  Сибирь — Трактор  -:-\n17.01.2027  Сибирь — Трактор  -:-\n\nС
- ибирь · статистика регулярка до матча:\nпока нет данных по стадии\n\nТракт
- ор · статистика регулярка до матча:\nпока нет данных по стадии
+ ктор (регулярка): ⚪ ⚪ ⚪ ⚪ 🔴\n🔴 05.09.2026  Локомотив — Трактор  5:1\n\nВ
+ се матчи 2026/2027:\n10.10.2026  Трактор — Сибирь  -:-\n26.10.2026  Тракто
+ р — Сибирь  -:-\n17.11.2026  Сибирь — Трактор  -:-\n17.01.2027  Сибирь — Т
+ рактор  -:-\n\nСибирь · статистика регулярка до матча:\nпока нет данных по
+  стадии\n\nТрактор · статистика регулярка до матча:\nНападающие:\n  бомбар
+ диры: 1) Светлаков А. — 1 О (1+0)\; 2) Катчук Б. — 1 О (0+1)\; 3) Рольгизе
+ р М. — 1 О (0+1)\n  снайперы: 1) Светлаков А. — 1 Г\n  ассистенты: 1) Катч
+ ук Б. — 1 П\; 2) Рольгизер М. — 1 П\nЗащитники:\n  бомбардиры: нет данных\
+ n  снайперы: нет данных\n  ассистенты: нет данных\nКоманда: реал. большинс
+ тва 0% (0/2)\, нейтр. меньшинства 66.7% (4/6)
 LOCATION:Челябинск
 END:VEVENT
 BEGIN:VEVENT
 UID:sibir-3000935@hcsibir-calendar
-DTSTAMP:20260905T075850Z
+DTSTAMP:20260905T135901Z
 DTSTART;TZID=Asia/Novosibirsk:20261029T193000
 DTEND;TZID=Asia/Novosibirsk:20261030T002500
 SUMMARY:Сибирь — Металлург Мг
@@ -353,7 +389,7 @@ LOCATION:Новосибирск
 END:VEVENT
 BEGIN:VEVENT
 UID:sibir-3000975@hcsibir-calendar
-DTSTAMP:20260905T075850Z
+DTSTAMP:20260905T135901Z
 DTSTART;TZID=Asia/Novosibirsk:20261101T173000
 DTEND;TZID=Asia/Novosibirsk:20261101T222500
 SUMMARY:Сибирь — Нефтехимик
@@ -369,7 +405,7 @@ LOCATION:Новосибирск
 END:VEVENT
 BEGIN:VEVENT
 UID:sibir-3001031@hcsibir-calendar
-DTSTAMP:20260905T075850Z
+DTSTAMP:20260905T135901Z
 DTSTART;TZID=Asia/Novosibirsk:20261104T193000
 DTEND;TZID=Asia/Novosibirsk:20261105T002500
 SUMMARY:Сибирь — Ак Барс
@@ -384,7 +420,7 @@ LOCATION:Новосибирск
 END:VEVENT
 BEGIN:VEVENT
 UID:sibir-3001087@hcsibir-calendar
-DTSTAMP:20260905T075850Z
+DTSTAMP:20260905T135901Z
 DTSTART;TZID=Asia/Novosibirsk:20261107T180000
 DTEND;TZID=Asia/Novosibirsk:20261107T225500
 SUMMARY:Авангард — Сибирь
@@ -399,7 +435,7 @@ LOCATION:Омск
 END:VEVENT
 BEGIN:VEVENT
 UID:sibir-3001111@hcsibir-calendar
-DTSTAMP:20260905T075850Z
+DTSTAMP:20260905T135901Z
 DTSTART;TZID=Asia/Novosibirsk:20261109T233000
 DTEND;TZID=Asia/Novosibirsk:20261110T042500
 SUMMARY:ЦСКА — Сибирь
@@ -413,52 +449,67 @@ LOCATION:Москва
 END:VEVENT
 BEGIN:VEVENT
 UID:sibir-3001211@hcsibir-calendar
-DTSTAMP:20260905T075850Z
+DTSTAMP:20260905T135901Z
 DTSTART;TZID=Asia/Novosibirsk:20261115T173000
 DTEND;TZID=Asia/Novosibirsk:20261115T222500
 SUMMARY:Сибирь — Динамо М
 DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · Дома · Новосибирск\n\nФо
  рма Сибири (регулярка): ⚪ ⚪ ⚪ ⚪ ⚪\nещё нет сыгранных матчей\n\nФорма Динам
- о М (регулярка): ⚪ ⚪ ⚪ ⚪ ⚪\nещё нет сыгранных матчей\n\nВсе матчи 2026/202
- 7:\n20.10.2026  Динамо М — Сибирь  -:-\n15.11.2026  Сибирь — Динамо М  -:-
- \n\nСибирь · статистика регулярка до матча:\nпока нет данных по стадии\n\n
- Динамо М · статистика регулярка до матча:\nпока нет данных по стадии
+ о М (регулярка): ⚪ ⚪ ⚪ ⚪ 🔴\n🔴 05.09.2026  Автомобилист — Динамо М  2:1\n
+ \nВсе матчи 2026/2027:\n20.10.2026  Динамо М — Сибирь  -:-\n15.11.2026  Си
+ бирь — Динамо М  -:-\n\nСибирь · статистика регулярка до матча:\nпока нет 
+ данных по стадии\n\nДинамо М · статистика регулярка до матча:\nНападающие:
+ \n  бомбардиры: 1) Тертышный Н. — 1 О (1+0)\; 2) Мартынов И. — 1 О (0+1)\;
+  3) Никонов А. — 1 О (0+1)\n  снайперы: 1) Тертышный Н. — 1 Г\n  ассистент
+ ы: 1) Мартынов И. — 1 П\; 2) Никонов А. — 1 П\nЗащитники:\n  бомбардиры: н
+ ет данных\n  снайперы: нет данных\n  ассистенты: нет данных\nКоманда: реал
+ . большинства 0% (0/1)\, нейтр. меньшинства 100% (3/3)
 LOCATION:Новосибирск
 END:VEVENT
 BEGIN:VEVENT
 UID:sibir-3001231@hcsibir-calendar
-DTSTAMP:20260905T075850Z
+DTSTAMP:20260905T135901Z
 DTSTART;TZID=Asia/Novosibirsk:20261117T193000
 DTEND;TZID=Asia/Novosibirsk:20261118T002500
 SUMMARY:Сибирь — Трактор
 DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · Дома · Новосибирск\n\nФо
  рма Сибири (регулярка): ⚪ ⚪ ⚪ ⚪ ⚪\nещё нет сыгранных матчей\n\nФорма Тракт
- ор (регулярка): ⚪ ⚪ ⚪ ⚪ ⚪\nещё нет сыгранных матчей\n\nВсе матчи 2026/2027
- :\n10.10.2026  Трактор — Сибирь  -:-\n26.10.2026  Трактор — Сибирь  -:-\n1
- 7.11.2026  Сибирь — Трактор  -:-\n17.01.2027  Сибирь — Трактор  -:-\n\nСиб
- ирь · статистика регулярка до матча:\nпока нет данных по стадии\n\nТрактор
-  · статистика регулярка до матча:\nпока нет данных по стадии
+ ор (регулярка): ⚪ ⚪ ⚪ ⚪ 🔴\n🔴 05.09.2026  Локомотив — Трактор  5:1\n\nВсе
+  матчи 2026/2027:\n10.10.2026  Трактор — Сибирь  -:-\n26.10.2026  Трактор 
+ — Сибирь  -:-\n17.11.2026  Сибирь — Трактор  -:-\n17.01.2027  Сибирь — Тра
+ ктор  -:-\n\nСибирь · статистика регулярка до матча:\nпока нет данных по с
+ тадии\n\nТрактор · статистика регулярка до матча:\nНападающие:\n  бомбарди
+ ры: 1) Светлаков А. — 1 О (1+0)\; 2) Катчук Б. — 1 О (0+1)\; 3) Рольгизер 
+ М. — 1 О (0+1)\n  снайперы: 1) Светлаков А. — 1 Г\n  ассистенты: 1) Катчук
+  Б. — 1 П\; 2) Рольгизер М. — 1 П\nЗащитники:\n  бомбардиры: нет данных\n 
+  снайперы: нет данных\n  ассистенты: нет данных\nКоманда: реал. большинств
+ а 0% (0/2)\, нейтр. меньшинства 66.7% (4/6)
 LOCATION:Новосибирск
 END:VEVENT
 BEGIN:VEVENT
 UID:sibir-3001287@hcsibir-calendar
-DTSTAMP:20260905T075850Z
+DTSTAMP:20260905T135901Z
 DTSTART;TZID=Asia/Novosibirsk:20261120T193000
 DTEND;TZID=Asia/Novosibirsk:20261121T002500
 SUMMARY:Сибирь — Автомобилист
 DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · Дома · Новосибирск\n\nФо
  рма Сибири (регулярка): ⚪ ⚪ ⚪ ⚪ ⚪\nещё нет сыгранных матчей\n\nФорма Автом
- обилист (регулярка): ⚪ ⚪ ⚪ ⚪ ⚪\nещё нет сыгранных матчей\n\nВсе матчи 2026
- /2027:\n13.09.2026  Сибирь — Автомобилист  -:-\n20.11.2026  Сибирь — Автом
- обилист  -:-\n28.01.2027  Автомобилист — Сибирь  -:-\n18.03.2027  Автомоби
- лист — Сибирь  -:-\n\nСибирь · статистика регулярка до матча:\nпока нет да
- нных по стадии\n\nАвтомобилист · статистика регулярка до матча:\nпока нет 
- данных по стадии
+ обилист (регулярка): ⚪ ⚪ ⚪ ⚪ 🟢\n🟢 05.09.2026  Автомобилист — Динамо М  2
+ :1\n\nВсе матчи 2026/2027:\n13.09.2026  Сибирь — Автомобилист  -:-\n20.11.
+ 2026  Сибирь — Автомобилист  -:-\n28.01.2027  Автомобилист — Сибирь  -:-\n
+ 18.03.2027  Автомобилист — Сибирь  -:-\n\nСибирь · статистика регулярка до
+  матча:\nпока нет данных по стадии\n\nАвтомобилист · статистика регулярка 
+ до матча:\nНападающие:\n  бомбардиры: 1) Барабанов А. — 1 О (1+0)\; 2) Сле
+ пышев А. — 1 О (1+0)\; 3) Голышев А. — 1 О (0+1)\n  снайперы: 1) Барабанов
+  А. — 1 Г\; 2) Слепышев А. — 1 Г\n  ассистенты: 1) Голышев А. — 1 П\; 2) Р
+ ужичка А. — 1 П\nЗащитники:\n  бомбардиры: 1) Карпухин И. — 1 О (0+1)\n  с
+ найперы: нет данных\n  ассистенты: 1) Карпухин И. — 1 П\nКоманда: реал. бо
+ льшинства 0% (0/3)\, нейтр. меньшинства 100% (1/1)
 LOCATION:Новосибирск
 END:VEVENT
 BEGIN:VEVENT
 UID:sibir-3001335@hcsibir-calendar
-DTSTAMP:20260905T075850Z
+DTSTAMP:20260905T135901Z
 DTSTART;TZID=Asia/Novosibirsk:20261123T193000
 DTEND;TZID=Asia/Novosibirsk:20261124T002500
 SUMMARY:Сибирь — Северсталь
@@ -473,7 +524,7 @@ LOCATION:Новосибирск
 END:VEVENT
 BEGIN:VEVENT
 UID:sibir-3001363@hcsibir-calendar
-DTSTAMP:20260905T075850Z
+DTSTAMP:20260905T135901Z
 DTSTART;TZID=Asia/Novosibirsk:20261125T230000
 DTEND;TZID=Asia/Novosibirsk:20261126T035500
 SUMMARY:Торпедо — Сибирь
@@ -487,7 +538,7 @@ LOCATION:Нижний Новгород
 END:VEVENT
 BEGIN:VEVENT
 UID:sibir-3001403@hcsibir-calendar
-DTSTAMP:20260905T075850Z
+DTSTAMP:20260905T135901Z
 DTSTART;TZID=Asia/Novosibirsk:20261127T230000
 DTEND;TZID=Asia/Novosibirsk:20261128T035500
 SUMMARY:Северсталь — Сибирь
@@ -502,7 +553,7 @@ LOCATION:Череповец
 END:VEVENT
 BEGIN:VEVENT
 UID:sibir-3001443@hcsibir-calendar
-DTSTAMP:20260905T075850Z
+DTSTAMP:20260905T135901Z
 DTSTART;TZID=Asia/Novosibirsk:20261130T193000
 DTEND;TZID=Asia/Novosibirsk:20261201T002500
 SUMMARY:Сибирь — Металлург Мг
@@ -518,7 +569,7 @@ LOCATION:Новосибирск
 END:VEVENT
 BEGIN:VEVENT
 UID:sibir-3001495@hcsibir-calendar
-DTSTAMP:20260905T075850Z
+DTSTAMP:20260905T135901Z
 DTSTART;TZID=Asia/Novosibirsk:20261204T193000
 DTEND;TZID=Asia/Novosibirsk:20261205T002500
 SUMMARY:Сибирь — Спартак
@@ -532,7 +583,7 @@ LOCATION:Новосибирск
 END:VEVENT
 BEGIN:VEVENT
 UID:sibir-3001563@hcsibir-calendar
-DTSTAMP:20260905T075850Z
+DTSTAMP:20260905T135901Z
 DTSTART;TZID=Asia/Novosibirsk:20261215T193000
 DTEND;TZID=Asia/Novosibirsk:20261216T002500
 SUMMARY:Сибирь — СКА
@@ -546,7 +597,7 @@ LOCATION:Новосибирск
 END:VEVENT
 BEGIN:VEVENT
 UID:sibir-3001599@hcsibir-calendar
-DTSTAMP:20260905T075850Z
+DTSTAMP:20260905T135901Z
 DTSTART;TZID=Asia/Novosibirsk:20261217T193000
 DTEND;TZID=Asia/Novosibirsk:20261218T002500
 SUMMARY:Сибирь — Амур
@@ -562,7 +613,7 @@ LOCATION:Новосибирск
 END:VEVENT
 BEGIN:VEVENT
 UID:sibir-3001671@hcsibir-calendar
-DTSTAMP:20260905T075850Z
+DTSTAMP:20260905T135901Z
 DTSTART;TZID=Asia/Novosibirsk:20261221T193000
 DTEND;TZID=Asia/Novosibirsk:20261222T002500
 SUMMARY:Сибирь — Адмирал
@@ -578,7 +629,7 @@ LOCATION:Новосибирск
 END:VEVENT
 BEGIN:VEVENT
 UID:sibir-3001691@hcsibir-calendar
-DTSTAMP:20260905T075850Z
+DTSTAMP:20260905T135901Z
 DTSTART;TZID=Asia/Novosibirsk:20261223T193000
 DTEND;TZID=Asia/Novosibirsk:20261224T002500
 SUMMARY:Сибирь — Адмирал
@@ -594,7 +645,7 @@ LOCATION:Новосибирск
 END:VEVENT
 BEGIN:VEVENT
 UID:sibir-3001787@hcsibir-calendar
-DTSTAMP:20260905T075850Z
+DTSTAMP:20260905T135901Z
 DTSTART;TZID=Asia/Novosibirsk:20261228T160000
 DTEND;TZID=Asia/Novosibirsk:20261228T205500
 SUMMARY:Амур — Сибирь
@@ -610,7 +661,7 @@ LOCATION:Хабаровск
 END:VEVENT
 BEGIN:VEVENT
 UID:sibir-3001823@hcsibir-calendar
-DTSTAMP:20260905T075850Z
+DTSTAMP:20260905T135901Z
 DTSTART;TZID=Asia/Novosibirsk:20261230T163000
 DTEND;TZID=Asia/Novosibirsk:20261230T212500
 SUMMARY:Адмирал — Сибирь
@@ -626,7 +677,7 @@ LOCATION:Владивосток
 END:VEVENT
 BEGIN:VEVENT
 UID:sibir-3001851@hcsibir-calendar
-DTSTAMP:20260905T075850Z
+DTSTAMP:20260905T135901Z
 DTSTART;TZID=Asia/Novosibirsk:20270103T173000
 DTEND;TZID=Asia/Novosibirsk:20270103T222500
 SUMMARY:Сибирь — Амур
@@ -642,7 +693,7 @@ LOCATION:Новосибирск
 END:VEVENT
 BEGIN:VEVENT
 UID:sibir-3001887@hcsibir-calendar
-DTSTAMP:20260905T075850Z
+DTSTAMP:20260905T135901Z
 DTSTART;TZID=Asia/Novosibirsk:20270105T173000
 DTEND;TZID=Asia/Novosibirsk:20270105T222500
 SUMMARY:Сибирь — Торпедо
@@ -656,7 +707,7 @@ LOCATION:Новосибирск
 END:VEVENT
 BEGIN:VEVENT
 UID:sibir-3001919@hcsibir-calendar
-DTSTAMP:20260905T075850Z
+DTSTAMP:20260905T135901Z
 DTSTART;TZID=Asia/Novosibirsk:20270107T173000
 DTEND;TZID=Asia/Novosibirsk:20270107T222500
 SUMMARY:Сибирь — Драконы
@@ -670,7 +721,7 @@ LOCATION:Новосибирск
 END:VEVENT
 BEGIN:VEVENT
 UID:sibir-3001955@hcsibir-calendar
-DTSTAMP:20260905T075850Z
+DTSTAMP:20260905T135901Z
 DTSTART;TZID=Asia/Novosibirsk:20270110T210000
 DTEND;TZID=Asia/Novosibirsk:20270111T015500
 SUMMARY:Ак Барс — Сибирь
@@ -685,7 +736,7 @@ LOCATION:Казань
 END:VEVENT
 BEGIN:VEVENT
 UID:sibir-3001999@hcsibir-calendar
-DTSTAMP:20260905T075850Z
+DTSTAMP:20260905T135901Z
 DTSTART;TZID=Asia/Novosibirsk:20270112T213000
 DTEND;TZID=Asia/Novosibirsk:20270113T022500
 SUMMARY:Барыс — Сибирь
@@ -701,7 +752,7 @@ LOCATION:Астана
 END:VEVENT
 BEGIN:VEVENT
 UID:sibir-3002039@hcsibir-calendar
-DTSTAMP:20260905T075850Z
+DTSTAMP:20260905T135901Z
 DTSTART;TZID=Asia/Novosibirsk:20270115T193000
 DTEND;TZID=Asia/Novosibirsk:20270116T002500
 SUMMARY:Сибирь — ХК Сочи
@@ -715,22 +766,27 @@ LOCATION:Новосибирск
 END:VEVENT
 BEGIN:VEVENT
 UID:sibir-3002083@hcsibir-calendar
-DTSTAMP:20260905T075850Z
+DTSTAMP:20260905T135901Z
 DTSTART;TZID=Asia/Novosibirsk:20270117T173000
 DTEND;TZID=Asia/Novosibirsk:20270117T222500
 SUMMARY:Сибирь — Трактор
 DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · Дома · Новосибирск\n\nФо
  рма Сибири (регулярка): ⚪ ⚪ ⚪ ⚪ ⚪\nещё нет сыгранных матчей\n\nФорма Тракт
- ор (регулярка): ⚪ ⚪ ⚪ ⚪ ⚪\nещё нет сыгранных матчей\n\nВсе матчи 2026/2027
- :\n10.10.2026  Трактор — Сибирь  -:-\n26.10.2026  Трактор — Сибирь  -:-\n1
- 7.11.2026  Сибирь — Трактор  -:-\n17.01.2027  Сибирь — Трактор  -:-\n\nСиб
- ирь · статистика регулярка до матча:\nпока нет данных по стадии\n\nТрактор
-  · статистика регулярка до матча:\nпока нет данных по стадии
+ ор (регулярка): ⚪ ⚪ ⚪ ⚪ 🔴\n🔴 05.09.2026  Локомотив — Трактор  5:1\n\nВсе
+  матчи 2026/2027:\n10.10.2026  Трактор — Сибирь  -:-\n26.10.2026  Трактор 
+ — Сибирь  -:-\n17.11.2026  Сибирь — Трактор  -:-\n17.01.2027  Сибирь — Тра
+ ктор  -:-\n\nСибирь · статистика регулярка до матча:\nпока нет данных по с
+ тадии\n\nТрактор · статистика регулярка до матча:\nНападающие:\n  бомбарди
+ ры: 1) Светлаков А. — 1 О (1+0)\; 2) Катчук Б. — 1 О (0+1)\; 3) Рольгизер 
+ М. — 1 О (0+1)\n  снайперы: 1) Светлаков А. — 1 Г\n  ассистенты: 1) Катчук
+  Б. — 1 П\; 2) Рольгизер М. — 1 П\nЗащитники:\n  бомбардиры: нет данных\n 
+  снайперы: нет данных\n  ассистенты: нет данных\nКоманда: реал. большинств
+ а 0% (0/2)\, нейтр. меньшинства 66.7% (4/6)
 LOCATION:Новосибирск
 END:VEVENT
 BEGIN:VEVENT
 UID:sibir-3002143@hcsibir-calendar
-DTSTAMP:20260905T075850Z
+DTSTAMP:20260905T135901Z
 DTSTART;TZID=Asia/Novosibirsk:20270121T203000
 DTEND;TZID=Asia/Novosibirsk:20270122T012500
 SUMMARY:Авангард — Сибирь
@@ -745,7 +801,7 @@ LOCATION:Омск
 END:VEVENT
 BEGIN:VEVENT
 UID:sibir-3002191@hcsibir-calendar
-DTSTAMP:20260905T075850Z
+DTSTAMP:20260905T135901Z
 DTSTART;TZID=Asia/Novosibirsk:20270124T173000
 DTEND;TZID=Asia/Novosibirsk:20270124T222500
 SUMMARY:Сибирь — ЦСКА
@@ -759,7 +815,7 @@ LOCATION:Новосибирск
 END:VEVENT
 BEGIN:VEVENT
 UID:sibir-3002223@hcsibir-calendar
-DTSTAMP:20260905T075850Z
+DTSTAMP:20260905T135901Z
 DTSTART;TZID=Asia/Novosibirsk:20270126T193000
 DTEND;TZID=Asia/Novosibirsk:20270127T002500
 SUMMARY:Сибирь — Барыс
@@ -775,23 +831,28 @@ LOCATION:Новосибирск
 END:VEVENT
 BEGIN:VEVENT
 UID:sibir-3002243@hcsibir-calendar
-DTSTAMP:20260905T075850Z
+DTSTAMP:20260905T135901Z
 DTSTART;TZID=Asia/Novosibirsk:20270128T210000
 DTEND;TZID=Asia/Novosibirsk:20270129T015500
 SUMMARY:Автомобилист — Сибирь
 DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · В гостях · Екатеринбург\
  n\nФорма Сибири (регулярка): ⚪ ⚪ ⚪ ⚪ ⚪\nещё нет сыгранных матчей\n\nФорма 
- Автомобилист (регулярка): ⚪ ⚪ ⚪ ⚪ ⚪\nещё нет сыгранных матчей\n\nВсе матчи
-  2026/2027:\n13.09.2026  Сибирь — Автомобилист  -:-\n20.11.2026  Сибирь — 
- Автомобилист  -:-\n28.01.2027  Автомобилист — Сибирь  -:-\n18.03.2027  Авт
- омобилист — Сибирь  -:-\n\nСибирь · статистика регулярка до матча:\nпока н
- ет данных по стадии\n\nАвтомобилист · статистика регулярка до матча:\nпока
-  нет данных по стадии
+ Автомобилист (регулярка): ⚪ ⚪ ⚪ ⚪ 🟢\n🟢 05.09.2026  Автомобилист — Динамо
+  М  2:1\n\nВсе матчи 2026/2027:\n13.09.2026  Сибирь — Автомобилист  -:-\n2
+ 0.11.2026  Сибирь — Автомобилист  -:-\n28.01.2027  Автомобилист — Сибирь  
+ -:-\n18.03.2027  Автомобилист — Сибирь  -:-\n\nСибирь · статистика регуляр
+ ка до матча:\nпока нет данных по стадии\n\nАвтомобилист · статистика регул
+ ярка до матча:\nНападающие:\n  бомбардиры: 1) Барабанов А. — 1 О (1+0)\; 2
+ ) Слепышев А. — 1 О (1+0)\; 3) Голышев А. — 1 О (0+1)\n  снайперы: 1) Бара
+ банов А. — 1 Г\; 2) Слепышев А. — 1 Г\n  ассистенты: 1) Голышев А. — 1 П\;
+  2) Ружичка А. — 1 П\nЗащитники:\n  бомбардиры: 1) Карпухин И. — 1 О (0+1)
+ \n  снайперы: нет данных\n  ассистенты: 1) Карпухин И. — 1 П\nКоманда: реа
+ л. большинства 0% (0/3)\, нейтр. меньшинства 100% (1/1)
 LOCATION:Екатеринбург
 END:VEVENT
 BEGIN:VEVENT
 UID:sibir-3002287@hcsibir-calendar
-DTSTAMP:20260905T075850Z
+DTSTAMP:20260905T135901Z
 DTSTART;TZID=Asia/Novosibirsk:20270130T180000
 DTEND;TZID=Asia/Novosibirsk:20270130T225500
 SUMMARY:Нефтехимик — Сибирь
@@ -807,7 +868,7 @@ LOCATION:Нижнекамск
 END:VEVENT
 BEGIN:VEVENT
 UID:sibir-3002339@hcsibir-calendar
-DTSTAMP:20260905T075850Z
+DTSTAMP:20260905T135901Z
 DTSTART;TZID=Asia/Novosibirsk:20270202T193000
 DTEND;TZID=Asia/Novosibirsk:20270203T002500
 SUMMARY:Сибирь — Авангард
@@ -822,7 +883,7 @@ LOCATION:Новосибирск
 END:VEVENT
 BEGIN:VEVENT
 UID:sibir-3002407@hcsibir-calendar
-DTSTAMP:20260905T075850Z
+DTSTAMP:20260905T135901Z
 DTSTART;TZID=Asia/Novosibirsk:20270209T193000
 DTEND;TZID=Asia/Novosibirsk:20270210T002500
 SUMMARY:Сибирь — Авангард
@@ -837,7 +898,7 @@ LOCATION:Новосибирск
 END:VEVENT
 BEGIN:VEVENT
 UID:sibir-3002479@hcsibir-calendar
-DTSTAMP:20260905T075850Z
+DTSTAMP:20260905T135901Z
 DTSTART;TZID=Asia/Novosibirsk:20270213T173000
 DTEND;TZID=Asia/Novosibirsk:20270213T222500
 SUMMARY:Сибирь — Барыс
@@ -853,7 +914,7 @@ LOCATION:Новосибирск
 END:VEVENT
 BEGIN:VEVENT
 UID:sibir-3002539@hcsibir-calendar
-DTSTAMP:20260905T075850Z
+DTSTAMP:20260905T135901Z
 DTSTART;TZID=Asia/Novosibirsk:20270218T220000
 DTEND;TZID=Asia/Novosibirsk:20270219T025500
 SUMMARY:Лада — Сибирь
@@ -867,7 +928,7 @@ LOCATION:Тольятти
 END:VEVENT
 BEGIN:VEVENT
 UID:sibir-3002587@hcsibir-calendar
-DTSTAMP:20260905T075850Z
+DTSTAMP:20260905T135901Z
 DTSTART;TZID=Asia/Novosibirsk:20270220T210000
 DTEND;TZID=Asia/Novosibirsk:20270221T015500
 SUMMARY:Металлург Мг — Сибирь
@@ -883,7 +944,7 @@ LOCATION:Магнитогорск
 END:VEVENT
 BEGIN:VEVENT
 UID:sibir-3002623@hcsibir-calendar
-DTSTAMP:20260905T075850Z
+DTSTAMP:20260905T135901Z
 DTSTART;TZID=Asia/Novosibirsk:20270222T210000
 DTEND;TZID=Asia/Novosibirsk:20270223T015500
 SUMMARY:Драконы — Сибирь
@@ -897,7 +958,7 @@ LOCATION:Санкт-Петербург
 END:VEVENT
 BEGIN:VEVENT
 UID:sibir-3002671@hcsibir-calendar
-DTSTAMP:20260905T075850Z
+DTSTAMP:20260905T135901Z
 DTSTART;TZID=Asia/Novosibirsk:20270225T193000
 DTEND;TZID=Asia/Novosibirsk:20270226T002500
 SUMMARY:Сибирь — Лада
@@ -911,7 +972,7 @@ LOCATION:Новосибирск
 END:VEVENT
 BEGIN:VEVENT
 UID:sibir-3002719@hcsibir-calendar
-DTSTAMP:20260905T075850Z
+DTSTAMP:20260905T135901Z
 DTSTART;TZID=Asia/Novosibirsk:20270228T140000
 DTEND;TZID=Asia/Novosibirsk:20270228T185500
 SUMMARY:Адмирал — Сибирь
@@ -927,7 +988,7 @@ LOCATION:Владивосток
 END:VEVENT
 BEGIN:VEVENT
 UID:sibir-3002755@hcsibir-calendar
-DTSTAMP:20260905T075850Z
+DTSTAMP:20260905T135901Z
 DTSTART;TZID=Asia/Novosibirsk:20270302T163000
 DTEND;TZID=Asia/Novosibirsk:20270302T212500
 SUMMARY:Адмирал — Сибирь
@@ -943,7 +1004,7 @@ LOCATION:Владивосток
 END:VEVENT
 BEGIN:VEVENT
 UID:sibir-3002783@hcsibir-calendar
-DTSTAMP:20260905T075850Z
+DTSTAMP:20260905T135901Z
 DTSTART;TZID=Asia/Novosibirsk:20270304T160000
 DTEND;TZID=Asia/Novosibirsk:20270304T205500
 SUMMARY:Амур — Сибирь
@@ -959,7 +1020,7 @@ LOCATION:Хабаровск
 END:VEVENT
 BEGIN:VEVENT
 UID:sibir-3002815@hcsibir-calendar
-DTSTAMP:20260905T075850Z
+DTSTAMP:20260905T135901Z
 DTSTART;TZID=Asia/Novosibirsk:20270306T140000
 DTEND;TZID=Asia/Novosibirsk:20270306T185500
 SUMMARY:Амур — Сибирь
@@ -975,7 +1036,7 @@ LOCATION:Хабаровск
 END:VEVENT
 BEGIN:VEVENT
 UID:sibir-3002879@hcsibir-calendar
-DTSTAMP:20260905T075850Z
+DTSTAMP:20260905T135901Z
 DTSTART;TZID=Asia/Novosibirsk:20270310T193000
 DTEND;TZID=Asia/Novosibirsk:20270311T002500
 SUMMARY:Сибирь — Салават Юлаев
@@ -991,7 +1052,7 @@ LOCATION:Новосибирск
 END:VEVENT
 BEGIN:VEVENT
 UID:sibir-3002939@hcsibir-calendar
-DTSTAMP:20260905T075850Z
+DTSTAMP:20260905T135901Z
 DTSTART;TZID=Asia/Novosibirsk:20270313T173000
 DTEND;TZID=Asia/Novosibirsk:20270313T222500
 SUMMARY:Сибирь — Динамо Мн
@@ -1005,7 +1066,7 @@ LOCATION:Новосибирск
 END:VEVENT
 BEGIN:VEVENT
 UID:sibir-3002963@hcsibir-calendar
-DTSTAMP:20260905T075850Z
+DTSTAMP:20260905T135901Z
 DTSTART;TZID=Asia/Novosibirsk:20270315T193000
 DTEND;TZID=Asia/Novosibirsk:20270316T002500
 SUMMARY:Сибирь — Адмирал
@@ -1021,23 +1082,28 @@ LOCATION:Новосибирск
 END:VEVENT
 BEGIN:VEVENT
 UID:sibir-3003023@hcsibir-calendar
-DTSTAMP:20260905T075850Z
+DTSTAMP:20260905T135901Z
 DTSTART;TZID=Asia/Novosibirsk:20270318T210000
 DTEND;TZID=Asia/Novosibirsk:20270319T015500
 SUMMARY:Автомобилист — Сибирь
 DESCRIPTION:КХЛ · Регулярный чемпионат 2026/2027 · В гостях · Екатеринбург\
  n\nФорма Сибири (регулярка): ⚪ ⚪ ⚪ ⚪ ⚪\nещё нет сыгранных матчей\n\nФорма 
- Автомобилист (регулярка): ⚪ ⚪ ⚪ ⚪ ⚪\nещё нет сыгранных матчей\n\nВсе матчи
-  2026/2027:\n13.09.2026  Сибирь — Автомобилист  -:-\n20.11.2026  Сибирь — 
- Автомобилист  -:-\n28.01.2027  Автомобилист — Сибирь  -:-\n18.03.2027  Авт
- омобилист — Сибирь  -:-\n\nСибирь · статистика регулярка до матча:\nпока н
- ет данных по стадии\n\nАвтомобилист · статистика регулярка до матча:\nпока
-  нет данных по стадии
+ Автомобилист (регулярка): ⚪ ⚪ ⚪ ⚪ 🟢\n🟢 05.09.2026  Автомобилист — Динамо
+  М  2:1\n\nВсе матчи 2026/2027:\n13.09.2026  Сибирь — Автомобилист  -:-\n2
+ 0.11.2026  Сибирь — Автомобилист  -:-\n28.01.2027  Автомобилист — Сибирь  
+ -:-\n18.03.2027  Автомобилист — Сибирь  -:-\n\nСибирь · статистика регуляр
+ ка до матча:\nпока нет данных по стадии\n\nАвтомобилист · статистика регул
+ ярка до матча:\nНападающие:\n  бомбардиры: 1) Барабанов А. — 1 О (1+0)\; 2
+ ) Слепышев А. — 1 О (1+0)\; 3) Голышев А. — 1 О (0+1)\n  снайперы: 1) Бара
+ банов А. — 1 Г\; 2) Слепышев А. — 1 Г\n  ассистенты: 1) Голышев А. — 1 П\;
+  2) Ружичка А. — 1 П\nЗащитники:\n  бомбардиры: 1) Карпухин И. — 1 О (0+1)
+ \n  снайперы: нет данных\n  ассистенты: 1) Карпухин И. — 1 П\nКоманда: реа
+ л. большинства 0% (0/3)\, нейтр. меньшинства 100% (1/1)
 LOCATION:Екатеринбург
 END:VEVENT
 BEGIN:VEVENT
 UID:sibir-3003055@hcsibir-calendar
-DTSTAMP:20260905T075850Z
+DTSTAMP:20260905T135901Z
 DTSTART;TZID=Asia/Novosibirsk:20270320T210000
 DTEND;TZID=Asia/Novosibirsk:20270321T015500
 SUMMARY:Спартак — Сибирь
